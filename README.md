@@ -1,14 +1,1 @@
-<h1>Burak TİTİZ</h1>
-
-<h3>Hakkımda</h3>
-
-<p>Merhaba ben Burak TİTİZ. Sivas'ta yaşıyorum. Kitap okumayı, belgesel izlemeyi ve arkadaşlarımla vakit geçirmeyi severim.</p>
-<p>Aynı zamanda hobilerim arasında tarihi ve turistik bölgeleri gezmek vardır. Yeni yerler görmeyi, yeni insanlar tanımayı severim</p>
-<p>Yakın zamanda global anlamda pandemi etkisinden dolayı bu işlemler aksamış olsa da yine de bu gibi işlemler tekrar yaşanmaya devam etmektedir.</p>
-<p>Üniversite okuduğum zamanlarda genel olarak Siber Güvenlik alanıyla ilgilenmiş olsam da üniversiteden mezun olduktan sonra FrontEnd Developer alanına yönelmiş, siber güvenliği ise güvenli yazılım yazmak için kullanmaya devam etmiş bulunmaktayım.</p>
-
-<h2>Sevdiğim Kitaplar</h2>
-
-<p>
-    Sabahattin Ali - Kürk Mantolu Madonna <br>Alexander Dumas - Monte Kristo Kontu <br>Adam Fawer - Empati
-</p>
+# Burak TİTİZ - Patika FrontEnd Patikası
