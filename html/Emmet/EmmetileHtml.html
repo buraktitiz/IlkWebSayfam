@@ -1,0 +1,264 @@
+<html>
+
+<head>
+
+</head>
+<body>
+    Emmet’deki Kısa Yollara Gelecek Olursak...
+    Emmette kullandığımız bazı kısa yollar var, şimdi bunları örnekleriyle tek tek inceleyelim.
+    
+    1 - > ifadesini kullanarak kardeş element oluşturuyoruz.
+    
+    Örneğin şekildeki, gibi ul tagı içerisinde li tagı oluşturmak istiyorsunuz. Bunun için yapmanız gereken tek şey ul>li yazarak Tab’a basmak.
+    
+    <ul>
+        <li>Lorem.</li>
+    </ul>
+    
+    Bu işlemi yaptıktan sonra ul tagına eklemek istediğimiz bir kardeş eleman kalmayınca ise ^ ifadesini kullanarak ul tagı dışına çıkıp yeni taglar oluşturabiliriz.
+    
+    Örneğin ul tagı içinde li tagı oluşturduktan sonra ul tagı dışında bir p tagı eklemek istiyorum. Bunun için ul>li^p yazarak taba basabilirim.
+    
+    <ul>
+        <li>Lorem.</li>
+        <p></p>
+    </ul>
+    
+    2 - Peki ya bu ul tagı içerisine birden fazla li oluşturmak istiyorsam, ne yapmalıyım?
+    
+    Bunun için * ifadesini kullanırız. ul>li*3 yaparak ul tagı içerisinde üç adet li tagı oluşturabilirsiniz.
+    
+    
+    <ul>
+        <li>Lorem.</li>
+        <li>Quisquam.</li>
+        <li>Repellendus.</li>
+    </ul>
+    
+    3 - Bunu yerine benzer biçimde kardeş eleman-tag eklemek için + ifadesi de kullanılabilirdi: ul>li+li+li
+    
+    
+    <br><br>
+    4 - Tag eklerken onlara class özelliği vermek için de . ifadesini kullanırız.
+    
+    Örneğin ul.class1>li.class2 yazılarak tab tuşuna basıldığında:
+    
+    <ul class="class1">
+        <li class="class2">lorem1</li>
+    </ul>
+    
+    
+    6 - Burada + ve * ifadesinin farkını da daha kolay anlayabiliriz.
+    
+    Örneğin ul tagının içine aynı id’ye sahip 3 adet li eklemek istiyorsam * ifadesi kullanılabilir. ul>li#id*3
+    
+    Fakat amacım farklı id’lere sahip üç adet li tagı oluşturmaksa ul>li#id1+li#id2+li#id3 yapılır.
+    
+    ul>li#id1+li#id2+li#id3 yazınca aşağıdaki kod görünür
+    
+    <ul>
+        <li id="id1"></li>
+        <li id="id2"></li>
+        <li id="id3"></li>
+    </ul>
+    
+    
+    7 - Peki otomatik artış sağlayan değerleri tek tek yazmak amacımız zaman tasarrufu iken ne kadar mantıklı?
+    
+    Emmet bunun için de bir kısa yola sahip :$ ifadesi. Yani yukarda görmüş olduğunuz ul>li#id1+li#id2+li#id3 şeklinde yazdığımız kod bloğunu çok daha basit bir biçimde ul>li#idNo$*3 diyerek yazabiliriz.
+    
+    Böylece otomatik olarak idNo1, idNo2 ve idNo3 idlerine sahip üç adet li tagımız olur
+    
+    ul>li#idNo$*3
+    
+    <ul>
+        <li id="idNo1">Lorem.</li>
+        <li id="idNo2">Quia.</li>
+        <li id="idNo3">Ipsum.</li>
+    </ul>
+    
+    
+    8 - Sırada oluşturulan tagların içine text yazılması var:
+    
+    Textlerimizi {} ifadesinin içine yazmamız yeterli: p{Emmet ile tag içine text yazma}
+    
+    <p>Emmet ile tag içine text yazma</p>
+    
+    9 - Bir diğer emmet kısa yolunu ise kodumuzda içerik olmadığı zamanlarda kullandığımız anlamsız yazıları yani “lorem ipsum”ları oluşturmak için kullanıyoruz.
+    
+    Örneğin bir paragraf oluşturacaksınız ve bu paragrafın henüz bi içeriği yok fakat boş durmasındansa oraya metin geleceğini belirtmek istiyorsunuz veya metin geldiğinde nasıl görüneceğini görmek istiyorsunuz. Anlamsız harfler veya zaman gerektiren rastgele cümleler oluşturmak yerine bu kısayolu kullanabilirsiniz : p>lorem Taba bastığınızda aşağıdaki gibi bir çıktı alacaksınız.
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, ad iusto cupiditate libero et hic soluta voluptatem error, aspernatur officiis eligendi ex veritatis provident quidem explicabo cum esse repudiandae repellat.</p>
+    
+    10 - Bu kadar uzun bir lorem yazısı istemiyorsanız yapmanız gereken tek şey lorem yazdıktan sonra yanına kaç kelimeli bir lorem oluşturmak istediğinizi eklemek.
+    
+    Örneğin 5 kelimeli bir lorem yazısı istiyorsunuz. Bunun için p>lorem5 yazmanız yeterli.
+    
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+    
+    
+    <br>
+    <h4>Küçük denemeler</h4>
+    
+    .item*2>lorem1
+    <div class="item">Lorem.</div>
+    <div class="item">Magnam.</div>
+    <br><br>
+    
+    div>p#item*6>lorem1
+    <div>
+        <p id="item">Lorem.</p>
+        <p id="item">Nostrum.</p>
+        <p id="item">Eius.</p>
+        <p id="item">Dolor?</p>
+        <p id="item">Exercitationem.</p>
+        <p id="item">Neque!</p>
+    </div>
+    
+    
+                <h3>DİKKAT EDİLMESİ GEREKEN ÖRNEKLER</h3>
+    
+    <!-- ul>li*3>p>h3>p -->
+    
+    ul>li*3>p>h3>p şeklinde yazarsak çok katmanlı şekilde "içinde" ögeleri oluşturmuş olacağız.
+    
+    <ul>
+        <li>
+            <p>
+                <h3>
+                    <p></p>
+                </h3>
+            </p>
+        </li>
+        <li>
+            <p>
+                <h3>
+                    <p></p>
+                </h3>
+            </p>
+        </li>
+        <li>
+            <p>
+                <h3>
+                    <p></p>
+                </h3>
+            </p>
+        </li>
+    </ul>
+    
+    Fakat biz bu şekilde bir kod görmek istemiyoruz. Bu şekilde içinde içinde içinde şeklinde karmaşık bir yapı şeklinde değil de yukarı çık ve öge oluştur yani ^ şu öge yazarsak, kodumuzu daha kolay ve anlaşılır hale getirmiş oluruz.
+    
+    Yani ul>li*3^p şeklinde yazarsak daha kolay ve anlaşılır bir kod yazmış oluruz.
+    
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <p>Lorem.</p>
+    
+    İçeri girip öge oluşturmuşsak (>), yukarı çıkıp (^) koda devam etmemiz gerekiyor.
+    
+    Kodu devam ettirip h3 e eklemek isteyip ul>li*3^p+h3 yazarsak karşımıza şu kod çıkar
+    
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <p>Lorem.</p>
+    <h3>Başlık</h3>
+    
+    ----------------------------------
+    <br>
+    
+    <!-- ul>li*3>lorem^p*2>lorem4+h3>lorem1  -- hatalı, istemediğimiz şekilide olan kod-->
+    ul>li*3>lorem^p*2>lorem4+h3>lorem1 yazarsak kodumuz aşağıdaki gibi görünecektir. Ama koda dikkat edecek olursak h3 başlık etiketini p tagı içinde yazmış olduğunu görürüz. Ve sonraki kodda bunu düzelteceğiz.
+    
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis error ad laborum quidem temporibus, asperiores rerum explicabo ducimus magnam ipsa mollitia tenetur enim recusandae. Alias minus ducimus aspernatur quas.</li>
+        <li>Officia natus itaque qui, aspernatur delectus rem error repellat fugiat harum reiciendis dolore vitae nihil omnis quam expedita nesciunt explicabo vero voluptate facere, veritatis ratione ipsa? Consectetur voluptas accusantium aliquid?</li>
+        <li>Sapiente eos quam nulla repellendus temporibus fugit corporis, voluptates omnis amet facere totam ipsa obcaecati quidem esse deserunt doloremque commodi magnam. In tempora quis quasi voluptas tempore debitis et repudiandae.</li>
+        <p>
+            Lorem ipsum dolor sit.
+            <h3>Lorem.</h3>
+        </p>
+        <p>
+            Cumque accusantium odit reprehenderit!
+            <h3>Adipisci.</h3>
+        </p>
+    </ul> 
+    
+    yukarıdaki kodumuz istemediğimiz olan kod. Çünkü biz h3 etiketini p'nin içinde değil ayrı bir şekilde yazmak istiyoruz. Onun için e şöyle yapacağız.
+    
+    <ul>
+        <li>Lorem.</li>
+        <li>Aspernatur!</li>
+        <li>Veniam.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Assumenda a tenetur possimus.</p>
+    <h3>Lorem.</h3>
+    
+    Yukarıdaki kod bizim istediğimiz kod. li tagının içine lorem eklediğimiz için p tagının 1 kez değil de 2 kez yukarı çıkması gerekiyor. İçerisinde lorem yazdıysak h3'te kardeş elementi kullanamayız ve üste çık şeklinde yazmalıyız.
+    
+    
+    --------------------------------------------------
+    <br><br><br>
+    
+    
+    h3.deneme>lorem1 yazdığımız zaman kodumuz ;
+    
+    <h3 class="deneme">Lorem.</h3> şeklinde gösterilir.
+    
+    Fakat biz h3#idolussun>lorem1 şeklinde yazarsak;
+    
+    <h3 id="idolussun">Lorem.</h3> şeklinde görünecektir.
+    
+    Ayrıca hem class hem de id oluşturmak istiyorsak;
+    
+    h3.deneme#idolussun>lorem1 yazınca kodumuz bu defa;
+    
+    <h3 class="deneme" id="idolussun">Lorem.</h3> şeklinde görünecektir.
+    <br><br><br>
+    
+    --------------------------------------------------
+    <br><br><br>
+    
+    Birden fazla class oluşturmak istiyorsak yine aynı şekilde hiç boşluk kullanmadan yapıyoruz
+    
+    <!-- h3.birinci-class.ikinci-class -->
+    
+    yukarıdaki kodu yazınca 
+    <h3 class="birinci-class ikinci-class"></h3>
+    karşımıza şeklinde kod çıkar.
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
