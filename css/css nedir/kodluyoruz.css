@@ -1,0 +1,24 @@
+
+/* Açıklama satırı */
+
+body {
+    background-color: white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+        h2 {
+            color: red;
+            font-size:34px;
+            text-transform: uppercase;
+        }
+        p{
+            color: green;
+            font-size: 15px;
+        }
+        ul
+        {
+            color: blue;
+        }
+
+        
