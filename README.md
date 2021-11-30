@@ -10,7 +10,6 @@
 | [Html 2. Ödev](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/HtmlIk%C4%B1nc%C4%B1Odev)
 | [Html 3. Ödev](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/htmlucuncuodev)
 
-
 ## CSS
 
 |İçerik.
