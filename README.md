@@ -22,7 +22,7 @@
 | [CSS Kutu Özellikleri](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/css/csskutuozellikleri)
 
 
-## Bootstrap Nedir?
+## Bootstrap
 
 |İçerik.
 |:---------------:
