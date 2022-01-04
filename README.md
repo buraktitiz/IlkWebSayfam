@@ -7,6 +7,7 @@
 | [İlk Web Sayfam](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/ilkWebSayfam)
 | [Listeleme](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/Listeleme)
 | [Emmet](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/Emmet)
+| [Semantik](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/html/Semantik/semantiketiket.html)
 | [Html 2. Ödev](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/HtmlIk%C4%B1nc%C4%B1Odev)
 | [Html 3. Ödev](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/html/htmlucuncuodev)
 
@@ -27,3 +28,8 @@
 |İçerik.
 |:---------------:
 | [Bootstrap Nedir?](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap)
+| [12'lik Grid Sistemi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/12s_gridsystem.html)
+| [Containter, Row ve Column Yapıları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/containerRowCol.html)
+| [Cihaz Duyarlı Kolon Yapısı(Responsive)](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/responsive.html)
+| [Row Yapısı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/row.html)
+
