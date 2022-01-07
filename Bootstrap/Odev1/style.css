@@ -1,0 +1,13 @@
+.jumbotron{
+    font-size: 30px;
+    padding: 5%;
+    text-align: center;
+    background-color:#E9ECEF;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+}
+
+.instrument{
+    font-size: 16px;
+}
