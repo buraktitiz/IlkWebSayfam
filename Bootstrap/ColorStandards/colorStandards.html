@@ -80,6 +80,93 @@
       </p>
     <p>Yukarıda p etiketi içerisinde yazdıklarımız şekil olarak h1 class'ının biçimini aldı.
     </p>
+    <h4 class="" style="margin-left: 5%;">Paragraf</h4>
+    <p>Web sitesinde bir içeriğe dikkat çekmek, daha belirgin kılmak için Bootstrap içerisinde var olan utility class'lardan .lead classını kullanabiliriz.</p>
+    <p><strong>Örnek kullanım:</strong></p>
+    <p>< p class="lead">Önemli bir paragraf< / p ></p>
+    <p>Paragrafın font stillendirmesi daha okunabilir ve standart paragrafa göre yazı boyutu daha büyük olacaktır.
+    </p>
+    <h4 class="" style="margin-left: 5%;">Inline HTML</h4>
+    <p>HTML kodlarımızda bazen vurgulamak istediğimiz kelimeleri ve ya bir yazıyı inline elementler ile belirtebiliriz. , kalın ve/ya italic yapmak istersek gibi. Bunu yapmanın bir kaç yolu var tabii ki. Inline elementler kullanarak < strong >< /strong > gibi veya inline element kullanmadan bir stillendirme vererek de bu sonucu elde edebiliriz.</p>
+    <p>
+      < p><mark>Highlight</mark>< /p> <br>
+< p><u>Altı çizili</u>< /p> <br>
+< p><strong>Kalın</strong>< /p> <br>
+< p><em>italic</em>< /p> <br>
+< p><small></small>< /p> <br>
+    </p>
+    <p>Diğer bir çözüm Bootstrap tarafından bize sağlanan class'ları HTML etiketine atamak. Yani .mark .small .text-decoration-underline gibi class'ları etiket içerisinde kullanmak.</p>
+    <p><strong>Örneğin:</strong></p>
+    <p>
+      < p class="mark">Highlight< /p> <br>
+    < p class="text-decoration-underline">Altı çizili< /p> <br>
+    < p class="small">Küçük< /p> <br>
+  </p>
+    <p>Bir kelime bütününü veya cümleyi gerçekten vurgulamak, italic kullanmak, şeklinde kullanıp o yapıya bir anlam yükleyecek isek tercihen HTML tag'lerini kullanmak önemlidir. Bu şekilde Ekran okuyuculara bu anlamı belirtmiş olur ve en önemlisi engeli olan ve interneti kullanan bireylere de bu mesajı vermiş oluruz.</p>
+    <h4 class="" style="margin-left: 5%;">Listeler</h4>
+    <p>Bootstrap, en çok kullandığımız elementlerden biri olan listeler içinde utility class'lara sahip.</p>
+    <p>
+      < ul class="list-unstyled"> <br>
+        .......... <br>
+        .......... <br>
+      < /ul> <br>
+     < ul class="list-inline"> <br>
+        < li class="list-inline-item"> <br>
+          Lorem Ipsum <br>
+        < /li> <br>
+        .......... <br>
+        .......... <br>
+       </ul> 
+    </p>
+    <p>Yukarıdaki kodu açıklayacak olursak:
+    </p>
+    <li>
+      list-unstyle classı , varsayılan olarak gelen liste stillendirmesini ve margin-left özeliğini kaldırır.
+    </li>
+    <li>
+      list-inline ve list-inline-item classlarının birlikte kullanımı ile, liste stillendirilmesi kaldırılır ve < li>  taglerinin tek bir satırda, aralarında margin verilmiş şekilde görüntülenmesini sağlar.
+    </li>
+    <br>
+
+    <h4 class="" style="margin-left: 5%;">Margin ve Padding Kullanımı</h4>
+    <p>Bootstrap, margin ve padding kullanımı için basit ve geniş class'lara sahip. Kullanıma geçmeden önce class'ların gösterimi için kullanılan harflerin ne anlama geldiğini ve Bootstrap'in kullandığı default boşluk değerlerine bakalım.</p>
+    <li>m-: ile başlayan class'lar margini temsil eder.</li>
+    <li>p- ile başlayan class'lar paddingi temsil eder.</li>
+    <br>
+    <h4 class="" style="margin-left: 5%;">Yönler</h4>
+    <li>t: margin-top ve/ya padding-top için,</li>
+    <li>b: margin-bottom ve/ya padding-bottom için,</li>
+    <li>s: soldan sağa, margin-left ve/ya padding-left, sağdan sola margin-right ve/ya padding-right için,</li>
+    <li>e: soldan sağa, margin-right ve/ya padding-right, sağdan sola margin-left ve/ya padding-left için,</li>
+    <li>x: margin ve paddingi x-ekseni doğrultusunda vermek için,</li>
+    <li>y: margin ve paddingi y-ekseni doğrultusunda vermek için,</li>
+    <li>Bu harfleri kullanmayı "m" ve/ya "p" yi yalnız kullandığımızda her 4 taraf için de aynı değeri veririz.</li>
+    <br>
+    <h4 class="" style="margin-left: 5%;">Boşluk büyüklüğü</h4>
+    <li>0:margin ve/ya padding sıfırlar.</li>
+    <li>1: varsayılan olarak, margin ve/ya padding değerinde 0.25 çarpanını kullanır.</li>
+    <li>2: varsayılan olarak, margin ve/ya padding değerinde 0.5 çarpanını kullanır.</li>
+    <li>3: varsayılan olarak, margin ve/ya padding değerinde 1 çarpanını kullanır.</li>
+    <li>4: varsayılan olarak, margin ve/ya padding değerinde 1.5 çarpanını kullanır.</li>
+    <li>5: varsayılan olarak, margin ve/ya padding değerinde 3 çarpanını kullanır.</li>
+    <li>auto: margin ve/ya padding değerine auto ataması yapar.</li>
+    <br>
+    <p><strong>Örnek kullanım:</strong></p>
+    <p>
+      < div class="mt-4"> <br>
+        Lorem ipsum <br>
+      < /div> <br>
+    </p>
+    <p>Yukarıdaki örnekte margin-topyerine geçen class kullanılmıştır ve kutumuzun üst kısmına 4 büyüklüğünde pay bırakmıştır.</p>
+    <h4 class="" style="margin-left: 5%;">Yatayda Ortalama</h4>
+    <p>Yukarıdakilere ek olarak yatayda bir elementi tam olarak merkeze alabilmek için Bootstrap .mx-auto class'ını içerir. Bu classın işlevini yerine getirebilmesi için elementin genişliğinin verilmiş olması gerekir.</p>
+    <p>
+      < div class="mx-auto" style="width: 200px;"> <br>
+      Yatayda ortalanmış element <br>
+    < /div> <br>
+  </p>
+    <p><strong>Uyarı:</strong>Bu kullanım için bir genişlik ataması yapmazsak doğru çalışmayacaktır!</p>
+
 </div>
 
     
