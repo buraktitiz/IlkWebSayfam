@@ -32,4 +32,4 @@
 | [Containter, Row ve Column Yapıları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/containerRowCol.html)
 | [Cihaz Duyarlı Kolon Yapısı(Responsive)](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/responsive.html)
 | [Row Yapısı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/row.html)
-
+| [Bootstrap Ödev-1](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/Odev1)
