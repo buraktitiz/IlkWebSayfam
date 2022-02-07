@@ -1,0 +1,29 @@
+.navbarbg {
+    background-color: white;
+}
+
+.body {
+    background-color: #f3f2ef;
+}
+
+input.searche {
+    font-size: 14px;
+    color: gray;
+    background-image: url(assets/search-solid\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    height: 36px;
+    max-width: 500px;
+    background-color: #eef3f8;
+    border: 0;
+}
+
+
+
+.menutext {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 5px;
+    font-weight: lighter;
+}
