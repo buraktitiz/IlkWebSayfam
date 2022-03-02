@@ -75,7 +75,6 @@ input.searche::placeholder {
 }
 
 
-
 .mt-1 {
     margin-top: .25rem!important;
 }
@@ -371,7 +370,17 @@ font-size: 12px;
 
 .message-box {
     display: flex;
+    position: fixed;
+    width:fit-content;
     right:25px;
+    bottom: 0px;
+    padding: 5px;
+    background-color:white;
+    align-items: center;
+    border: 1px solid #9b9b9b;
+    border-radius:10px 10px 0 0;
+    
+
 }
 
 .message-photo {
@@ -387,4 +396,13 @@ font-size: 12px;
     line-height: 20px;
     text-align: center;
     display: inline;
+    margin-right: 50px;
+
+    
+}
+
+.mercado-match {
+margin-right: 10px;
+
+
 }
