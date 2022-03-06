@@ -34,3 +34,5 @@
 | [Row Yapısı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Bootstrap/row.html)
 | [Bootstrap Ödev-1](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/Odev1)
 | [Renk Standartları, Tipografi, Margin ve Padding Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/ColorStandards)
+| [Bootstrap Instagram Clone](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/Instagram%20Clone)
+
