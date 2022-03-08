@@ -35,4 +35,12 @@
 | [Bootstrap Ödev-1](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/Odev1)
 | [Renk Standartları, Tipografi, Margin ve Padding Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/ColorStandards)
 | [Bootstrap Instagram Clone](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/Instagram%20Clone)
+| [Bootstrap LinkedIn Clone](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/LinkedIn%20Clone)
 
+
+## JavaScript
+
+|İçerik.
+|:---------------:
+|[Hello World](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/01-hello-world.js)
+|[Değişken Tanımlama](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/02-degisken-tanimlama.js)
