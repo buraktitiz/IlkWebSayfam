@@ -28,7 +28,7 @@ Burada let ile tanımlama yaptığımız için yukarıda olan console.log(fullNa
 let fullName="Burak TİTİZ"
 
 /* let ile tanımlanan değişkenin içindeki bilyi değiştirme */
-/* Yukarıda let fullName="Burak TİTİZ olarak tanımladığımız değişkenimiz aşağıda aynı isimdeki dğeişken  farklı bir isim aldığı için en son yazılan değişken aktif oluyor" */
+/* Yukarıda let fullName="Burak TİTİZ olarak tanımladığımız değişkenimiz aşağıda aynı isimdeki değişken farklı bir isim aldığı için en son yazılan değişken aktif oluyor" */
 
 fullName="Lorem Ipsum Dolor"
 console.log(fullName)
