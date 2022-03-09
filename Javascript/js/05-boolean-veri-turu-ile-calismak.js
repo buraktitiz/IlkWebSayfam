@@ -29,3 +29,6 @@
         Boolean(0 === 0) //true
 
         Boolean(userName.length>0) //true
+
+        var a= true;
+console.log(Boolean(a));
