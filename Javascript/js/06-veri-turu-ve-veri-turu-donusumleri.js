@@ -140,5 +140,86 @@ Ne input.toString() ne deinput.valueOf() primitif sonuç vermiyorsa; TypeError f
 NOT: == operatörünün (lose equality- zayıf eşitlik) farklı iki tipteki a ve b değişkenleri için pratikte nasıl farklı davrandığını, JavaScript Comparison Table(https://dorey.github.io/JavaScript-Equality-Table/)’de gösteren matristen görebilirsiniz.
 
 
+console.log(true+false)
+
+"+" operatörü numeric işlem yapar bu durumlardan boolean ifadeler numaric coercion'a uğrar.
+Number(true) + Number(false) dönüşen ifade
+1+ 0 şeklini alır Sonuç = 1
+
+
+
+console.log(12 / "6")
+
+"/" operatörü numeric işlem yapacağından
+Başlangıçta number olduğu için "6" ifadesi
+numaric coercion'a uğrar Number("6") ve 6 değerini döner
+12 / 6 bu şekli alır Sonuç= 2
+
+
+
+console.log([1,2,3]>null)
+
+">" karşılaştırma operatörü olduğundan numaric coercion yapacaktır.
+[1,2,3] bir array olup refarans tip tutuğundan primitif değere dönüştürülerek işleme alınır
+[1,2,3].toString() kullanıldığında içeri ”1,2,3” değerini döndürür
+”1,2,3”> null şeklini alır
+">" karşılaştırma ifadesi olduğundan tekrar numaric coercion tetiklenir
+String ifade numbera zorlanır Number(“1,2,3”)
+Number("1,2,3") ifadesinin sonucu NaN olacağından
+NaN>null şeklini alır
+ve NaN kendine dahil hiç kimseye eşit olmadığından!! Sonuç= false
+
+
+
+console.log("number" + 15 + 3) 
+
+örneğimizin başında string bir ifade bulunduğundan diğer ögeler için de string coercion tetiklenir
+"number+ "15" + "3" şeklini alır Sonuç= "number153"
+
+
+
+console.log(['x','y'] == 'x,y')
+
+== operatörü array için numeric coercion yapacaktır
+['x','y'] dizisinin numeric coercion yapabilmesi için primitif tipe dönüştürmek gerekir.
+['x','y'].toString() metoduyla "x,y" döner
+Son eşitlik "x,y"=="x,y" halini alır
+Sonuç= true
+
+
+//
+1 - console.log(“foo” + +“bar”)
+// +"bar" => Number("bar") => NaN //"foo"+NaN //"foo" +"NaN" //Sonuç= "fooNaN"
+
+2 - console.log(‘true’ == true)
+
+//Number('true')=>NaN //NaN == true //NaN == 1 //Sonuç= false
+
+3 - console.log(null==””)
+
+// null sadece kendine ve undefined'a eşit olduğundan //Sonuç= false
+
+4 - console.log(0 || “ 0” && {})
+
+//(0 || "0") %% {} //(false || true) && {} => dolu string true döndüğünden //(true) && {} => || operatörü ilk bulduğu true değeri, && operatörü ilk bulduğu false değeri döner
+
+//true && {} => && operatörü false değer bulamazsa son bulduğu değeri döndürür. //Sonuç={}
+
+5 - console.log([“a”] > null)
+
+//"a" > null => array toStirng metodunun içine girer //NaN > null => Numeric dönüştürmeye girer //NaN > 0 //Sonuç= false
+
+
+//2
+console.log('true' == true)
+//3
+console.log(null=="")
+//4
+console.log(0 || " 0" && {})
+//5
+console.log(["a"] > null)
+
+
+
 */
 
