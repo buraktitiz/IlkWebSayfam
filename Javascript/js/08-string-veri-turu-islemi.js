@@ -45,7 +45,7 @@ email.includes('@') //true
 console.log(email)
 
 
-/* istediğim bilgiyle başladı mı? bitti mi? ->startWidth, endsWidth */
+/* istediğim bilgiyle başladı mı? bitti mi? ->startsWidth, endsWidth */
 console.log(email.endsWith('kodluyoruz.org'))
 
 
@@ -73,3 +73,31 @@ console.log(isim.slice(6,10)) //titi (Bitiş index numarasındaki karakter sonuc
 /* Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
  */
 console.log(isim.slice(2)) // rak titiz
+console.log(isim.replace("titiz","deagle")) // burak deagle
+console.log(isim.toUpperCase()) // BURAK TITIZ
+console.log(isim.toLowerCase()) // burak titiz
+
+var ad="burak"
+var soyad="titiz"
+console.log(ad.concat("", soyad)) //buraktitiz (Arada boşluk yok)
+console.log(ad.concat(' ', soyad)) //burak titiz (Arada boşluk var)
+console.log(isim.charAt(3)) // a
+console.log(isim.charCodeAt(2)) // 114 (r'nin karşılık değeri)
+
+
+let yeni_isim="burak,deagle"
+let isimler=yeni_isim.split(',');
+console.log(isimler); // Array ["burak", "deagle"]
+
+let asd="sads, dfkh"
+let karmaasd=asd.split('')
+console.log(karmaasd) // Array(10) [ "s", "a", "d", "s", ",", " ", "d", "f", "k", "h" ]
+/* Yukarıdaki yazdırma işleminde her karakter tek tek yazıldı. 
+Çünkü karmaasd'nin asd.split'ini ayırmadık */
+
+
+firstName = firstName.toUpperCase();
+console.log(firstName); //"JAVASCRIPT"
+
+lastName = lastName.toLowerCase();
+console.log(lastName); //"bootcamp"
