@@ -1,7 +1,7 @@
 /* ********* Template Literals Kullanımı *********** */
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
-let username="`burak`"
+let username="burak"
 const DOMAIN = "kodluyoruz.org"
 
 let email=username+"@"+DOMAIN
@@ -16,4 +16,4 @@ Günün saat bilgisi: ${new Date().getHours()}
 `
 /* backticks oluşturmak için: Altgr + , */
 
-console.log(info)
+console.log(info)   
