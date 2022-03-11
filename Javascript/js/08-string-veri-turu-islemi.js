@@ -58,3 +58,18 @@ lastName'in 0. index'ini al ve büyük yaz.
 lastName'in 1. index'inden itibaren al ve sonrasını küçük yaz.
  */
 console.log(fullName)
+
+
+/* Genel Çalışma */
+var isim="burak titiz"
+console.log(isim.indexOf("k")) //4
+console.log(isim.lastIndexOf('i')) //9
+
+console.log(isim.search('tiz'))  //8
+console.log(isim.search("tiz")) //8
+console.log(isim.slice(6,10)) //titi (Bitiş index numarasındaki karakter sonuca dahil edilmez)
+
+
+/* Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
+ */
+console.log(isim.slice(2)) // rak titiz
