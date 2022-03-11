@@ -9,10 +9,12 @@ console.log("Merhaba",username,"Sitemize Hoşgeldin.","Mail adresin: ",email)
 
 let info=`Merhaba ${username} sitemize hoşgeldin. 
 Mail adresin: ${email}
+
 mail adresinin uzunluuğu: ${email.length}
 Borcunuz: ${(2+5)*10}₺
 Günün saat bilgisi: ${new Date().getHours()}
 
+Kısa isminiz: ${username[0]}.
 `
 /* backticks oluşturmak için: Altgr + , */
 
