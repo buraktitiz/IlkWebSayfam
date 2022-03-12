@@ -101,3 +101,11 @@ console.log(firstName); //"JAVASCRIPT"
 
 lastName = lastName.toLowerCase();
 console.log(lastName); //"bootcamp"
+
+
+let url="www.kodluyoruz.org"
+let language="Java"
+
+console.log(language.replace("Java","JavaScript"))
+console.log(url.indexOf("."))
+console.log(url.slice(3+1))
