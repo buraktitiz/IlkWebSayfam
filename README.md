@@ -42,5 +42,13 @@
 
 |İçerik.
 |:---------------:
-|[Hello World](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/01-hello-world.js)
-|[Değişken Tanımlama](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/02-degisken-tanimlama.js)
+|[01-Hello World](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/01-hello-world.js)
+|[02-Değişken Tanımlama](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/02-degisken-tanimlama.js)
+|[03-Değişken Tanımlama Kuralları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/03-degisken-tanimlama-kurallari.js)
+|[04Number Veri Türü ile Çalışmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/04-number-veri-ruru-ile-calismak.js)
+|[05-Boolean Veri Türü ile Çalışmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/05-boolean-veri-turu-ile-calismak.js)
+|[06-Veri Türü ve Veri Türü Dönüşümleri](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/06-veri-turu-ve-veri-turu-donusumleri.js)
+|[07-Template Literals Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/07-template-literals-kullanimi.js)
+|[08-String Veri Türü İşlemi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/08-string-veri-turu-islemi.js)
+|[09-DOM - Document Object Model](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/09-document-object-model.js)
+|[10-DOM İçerisinden Öge Seçimi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/10-dom-icerisinden-oge-secimi.js)
