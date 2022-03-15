@@ -52,5 +52,5 @@
 |[08-String Veri Türü İşlemi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/08-string-veri-turu-islemi.js)
 |[09-DOM - Document Object Model](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/09-document-object-model.js)
 |[10-DOM İçerisinden Öge Seçimi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/10-dom-icerisinden-oge-secimi.js)
-|[11-Prompt ile Kullanıcıdan Bilgi Almak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/11-promp-ile-kullanicidan-bilgi-almak.js)
+|[11-Prompt ile Kullanıcıdan Bilgi Almak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/11-prompt-ile-kullanicidan-bilgi-almak.js)
 |[12-Liste İçindeki Ögeye Ulaşmak ve Yeni Öge Eklemek](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/12-liste-icindeki-ogeye-ulasmak-veya-yeni-oge-eklemek.js)
