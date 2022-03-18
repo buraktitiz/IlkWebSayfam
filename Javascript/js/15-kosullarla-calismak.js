@@ -65,9 +65,28 @@ else if (vki >= 18.5 && vki <= 24.9) console.log(`Vücut kitle endeksiniz: `,
 else if (vki >= 25 && vki <= 29.9) console.log(`Vücut kitle endeksiniz: `,
     `${vki}, değerleriniz yüksektir`);
     else if (vki >= 30) console.log(`Vücut kitle endeksiniz: `,
-    `${vki}, değerleriniz yüksektir`);
+    `${vki}, değerleriniz aşırı yüksektir`);
 else {
     console.log("Girdiğiniz değerleri kontrol ediniz")
 }
 console.log(vki);
 */
+
+
+
+/* Bilgisayar tarafından 10'a kadar tutturulmuş bir sayıyı tahmin etme programı */
+
+let randomSayi=(Math.floor(Math.random()*10)+1) // 1 ile 10 arasında sayı üretir.
+/* (Math.floor(Math.random()*10)) yapmış olsaydık 0'dan 9'a kadar sayı üretmiş olacaktı.
+Bu kodumuzda sayıları üretmeye 0'dan başlıyor. Ve 10 tane üretilsin demiş oluyoruz.
+ama biz 10+1 yaptığımız kodda 1'den başlayıp 10 tane sayı üret diyoruz. 
+Yani en üstteki kodumuzda 1-10 arasını üretiyoruz. */
+
+var tahmin=prompt("Rastgele bir sayı giriniz: ")
+if(tahmin==randomSayi&&tahmin!=null)
+{
+   console.log(`Tebrikler. Bildiniz!`,`${randomSayi}`) 
+}
+else {
+    console.log(`Girdiğiniz Sayı: `,`${tahmin}`,`${"Bilgisayarın tuttuğu sayı: "}`,`${randomSayi}`,`Tekrar Deneyiniz!`)
+}
