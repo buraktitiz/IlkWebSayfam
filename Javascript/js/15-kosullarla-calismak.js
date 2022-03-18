@@ -14,7 +14,7 @@ else {
 } */
 
 
- /* //İki sayıdan büyük olanı bulalım 
+/* //İki sayıdan büyük olanı bulalım 
 
 var x=5;
 var y=6;
@@ -50,3 +50,24 @@ else if(ortalama>84 && ortalama<=100)
 {
     console.log(`En yüksek ortalama,${ortalama}`)
 } */
+
+
+/* Vücut kitle endeksi hesaplama programı 
+
+let kilo = prompt("Kilonuzu giriniz: ")
+let boy = prompt("Boyunuzu girin: ")
+
+let vki = (kilo / (boy * boy));
+if (vki < 18.5) console.log(`Vücut kitle endeksiniz: `,
+    `${vki}, değerleriniz düşüktür`);
+else if (vki >= 18.5 && vki <= 24.9) console.log(`Vücut kitle endeksiniz: `,
+    `${vki}, değerleriniz normaldir.`);
+else if (vki >= 25 && vki <= 29.9) console.log(`Vücut kitle endeksiniz: `,
+    `${vki}, değerleriniz yüksektir`);
+    else if (vki >= 30) console.log(`Vücut kitle endeksiniz: `,
+    `${vki}, değerleriniz yüksektir`);
+else {
+    console.log("Girdiğiniz değerleri kontrol ediniz")
+}
+console.log(vki);
+*/
