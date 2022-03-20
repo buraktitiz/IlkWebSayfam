@@ -60,3 +60,10 @@
 |[16-Çoklu Koşul Yapısı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/16-coklu-kosul-yapisi.js)
 |[17-Ternary Operatörleri ile Sort-If Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/17-ternary-operatorleri-ile-sort-if-kullanimi.js)
 |[18-Koşullarla Çalışmak Bölüm Sonu Çalışmaları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/18-kosullarla-calismak-bolum-sonu-egzersizi.js)
+
+
+## JavaScript Ödevler
+
+|İçerik.
+|:---------------:
+|[Saat Karşılama Ödevi](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev1)
