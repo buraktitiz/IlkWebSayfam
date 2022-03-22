@@ -44,3 +44,26 @@ var sonuc2 = topla(10,20); // geçersiz
 console.log(ekle(10,20)) // 30 
 console.log(topla(10,80)) // 90
   */
+
+
+/* 
+function mesajVer() {
+    alert( 'Herkese Merhabalar!' );
+    }
+    mesajVer()
+     */
+
+
+
+ /* 
+    const carpim = (sayi1, sayi2) => sayi1 * sayi2;
+
+    // Daha uzun hali ise;
+   // const carpim = function(sayi1,sayi2){
+    // return sayi1 * sayi2;
+   // } 
+    
+    console.log(carpim(3, 5)); 
+  */
+
+    
