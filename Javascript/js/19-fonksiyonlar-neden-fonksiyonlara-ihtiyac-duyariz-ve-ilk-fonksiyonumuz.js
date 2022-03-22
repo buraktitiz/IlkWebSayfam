@@ -116,3 +116,55 @@ function factoriel(x) {
 }
 console.log(factoriel(6)) //720
  */
+
+
+
+/* 
+{
+    let message = "Merhabalar"
+    console.log(message)
+}
+console.log(message) // kod bloğu dışında olduğu için bunu yazdırmayacak.
+ */
+
+
+
+/* 
+// If, for, while gibi döngüler de değişkenleri code block'larında tanımlar ve sadece orada ulaşılabilirler.
+if(true) {
+    let message='Merhabalar.'
+    console.log(message)
+}
+console.log(message) // od bloğu dışında olduğu için bunu yazdırmayacak.
+ */
+
+
+/* 
+function stringFormat(str) {
+    {
+        let part1=str.slice(0,3)
+        let part2=str.slice(3)
+        str=part1.toUpperCase()+part2
+    }
+    // part1 ve part2 kullanılamaz. 
+    // bir koşula bağlı return edelim. basit olması açısından sadece true yazalım.
+    if(true) {
+        return str
+    }
+    return str.slice(4)
+}
+ */
+
+function makeCounter() {
+    let count = 0;
+  
+    return function () {
+      return count++;
+    };
+  }
+  
+  let counter = makeCounter();
+  
+  alert(counter()); // 0
+  alert(counter()); // 1
+  alert(counter()); // 2
