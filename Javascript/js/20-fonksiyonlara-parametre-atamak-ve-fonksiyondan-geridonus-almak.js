@@ -39,3 +39,35 @@ function domIdWriteInfo(id,info){
 let htmlInfo=`<span style="color:red">Renk Kızıllaştı</span>`
 domIdWriteInfo('greeting',htmlInfo)
 domIdWriteInfo('info',greetings2("Lorem","Ipsum"))
+
+
+function Question(hobby) {
+    switch (hobby) {
+      case "car":
+        return function (name) {
+          console.log(name + " do you have a car ?");
+        };
+        break;
+  
+      case "book":
+        return function (name) {
+          console.log(name + " what is your favorite author?");
+        };
+        break;
+  
+      case "software":
+        return function (name, type) {
+          console.log(name + " are you interested in " + type + "?");
+        };
+        break;
+  
+      default:
+        return function (name) {
+          console.log(name + "  how are you ?");
+        };
+        break;
+    }
+  }
+  
+  var softwareQuestion = Question("software");
+  softwareQuestion("Cemre","nodejs");
