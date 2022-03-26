@@ -60,7 +60,11 @@
 |[16-Çoklu Koşul Yapısı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/16-coklu-kosul-yapisi.js)
 |[17-Ternary Operatörleri ile Sort-If Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/17-ternary-operatorleri-ile-sort-if-kullanimi.js)
 |[18-Koşullarla Çalışmak Bölüm Sonu Çalışmaları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/18-kosullarla-calismak-bolum-sonu-egzersizi.js)
-
+|[19-Fonksiyonlar - Neden Fonksiyonlara İhtiyaç Duyarız?](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/19-fonksiyonlar-neden-fonksiyonlara-ihtiyac-duyariz-ve-ilk-fonksiyonumuz.js)
+|[20-Fonksiyonlara Parametre Atamak ve Fonksiyondan Geridönüş Almak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/20-fonksiyonlara-parametre-atamak-ve-fonksiyondan-geridonus-almak.js)
+|[21-Arrow Function Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/21-arrow-function-kullanimi.js)
+|[22-DOM Etkinliğiyle Çalışmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/22-dom-etkinlikleriyle-calismak.js)
+|[23-Fonksiyon Bölüm Sonu Çalışması](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/23-fonksiyon-bolum-sonu-calismasi.js)
 
 ## JavaScript Ödevler
 
