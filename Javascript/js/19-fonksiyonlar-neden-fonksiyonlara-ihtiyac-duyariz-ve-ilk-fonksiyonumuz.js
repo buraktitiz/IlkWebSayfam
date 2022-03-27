@@ -176,9 +176,9 @@ function makeCounter() {
 
 
   /* *** Function Decleration // Statement */
-  function square(num) {
+  /* function square(num) {
     return(num**2)
-  }
+  } */
 
   /* square(5)
   console.log(square(5)) */
@@ -188,4 +188,30 @@ function makeCounter() {
 
 // Function declaration -> HOISTED
 
-square(5)
+
+
+/*  *** Function Expression */
+
+const square =function (num) {
+  return(num**2)
+}
+// Function name is optional
+
+console.log(square)
+console.log(square(5))
+
+// First Class Functions
+// First class fonksiyonlara değişken gibi davranabiliriz.
+// Örneğin;
+const myArr=[6,"JavaScript",function() {console.log("Array Element")}]
+
+myArr[2]()
+
+
+const myObj={
+  age:32,
+  name:"JavaScript",
+  func: function() {console.log("Object Element");}
+}
+myObj.func()
+console.log(20+(function(){return 10})())
