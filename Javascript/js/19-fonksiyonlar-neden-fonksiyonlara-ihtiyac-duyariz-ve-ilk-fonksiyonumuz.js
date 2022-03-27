@@ -1,7 +1,7 @@
 /*  ************ Fonksiyonlar Nedir? Neden ihtiyaç duyarız? */
 /* İlk Fonksiyonumuzu Tanımlamak: */
 
-function helloWorld() {
+/* function helloWorld() {
     console.log("Hello World")
 }
 
@@ -12,7 +12,7 @@ function hello() {
 
 hello() // Çalıştırmak için hello'yu () ile tanımlayarak çalıştırıyoruz
 // Ayrıca yukarıda hellowworld'ü hello'nun içine tanımladık. Orada tanımlı olduğundan dolayı hello çağrıldığında hem Merhaba hem de Hello World yazacaktır.
-
+ */
 
 /* 
 
@@ -172,3 +172,20 @@ function makeCounter() {
   alert(counter()); // 1
   alert(counter()); // 2
    */
+
+
+
+  /* *** Function Decleration // Statement */
+  function square(num) {
+    return(num**2)
+  }
+
+  /* square(5)
+  console.log(square(5)) */
+
+  /* console.log(square()) // Nan
+  console.log(square(4)) //8 */
+
+// Function declaration -> HOISTED
+
+square(5)
