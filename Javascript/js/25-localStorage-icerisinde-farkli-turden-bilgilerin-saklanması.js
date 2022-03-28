@@ -7,7 +7,6 @@ localStorage.setItem('userInfo',JSON.stringify(user))
 let userInfo=localStorage.getItem('userInfo') // Bilgiyi al
 userInfo=JSON.parse(userInfo)
 console.log(userInfo)
-JSON.parse(userInfo)
 
 //Daha komplex bir yapıda getirmek istediğimizde önce string'e çevirmemiz lazım
 //String'e çevirmek için de JSON ile beraber gelen stringify özelliğini kullanıyoruz
