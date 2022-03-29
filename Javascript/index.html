@@ -84,7 +84,7 @@
         <input type="text" name="yas" placeholder="Yaşınızı giriniz.">
         <button type="submit">Gönder</button>
     </form>
-    <!-- UYARI: GET METODU ÖNEMSİZ VERİLERDE KULLANILMALIDIR, KULLANICI ADI, ŞİFRE GİBİ BİLGİLERİN BU METHOD İLE GÖNDERİLMESİ UYGUN DEĞİLDİR. -->
+    <!-- **UYARI: GET METODU ÖNEMSİZ VERİLERDE KULLANILMALIDIR, KULLANICI ADI, ŞİFRE GİBİ BİLGİLERİN BU METHOD İLE GÖNDERİLMESİ UYGUN DEĞİLDİR. -->
 
 
     <form method="POST">
@@ -98,7 +98,7 @@
         <input type="password" name="password" placeholder="Şifrenizi giriniz." />
         <button type="submit">Giriş</button>
     </form>
-    <!-- UYARI: GET METODU ÖNEMSİZ VERİLERDE KULLANILMALIDIR, KULLANICI ADI, ŞİFRE GİBİ BİLGİLERİN BU METHOD İLE GÖNDERİLMESİ UYGUN DEĞİLDİR. -->
+    <!-- **UYARI: GET METODU ÖNEMSİZ VERİLERDE KULLANILMALIDIR, KULLANICI ADI, ŞİFRE GİBİ BİLGİLERİN BU METHOD İLE GÖNDERİLMESİ UYGUN DEĞİLDİR. -->
 
     <!-- 22-dom-etkinlikleriyle-calismak 
         
@@ -117,18 +117,18 @@
         <input type="submit" value="Submit">
     </form>
     <script>
-        //id=select olan nesne çağrılarak color değişkenine atandı
+        /**/id=select olan nesne çağrılarak color değişkenine atandı
         const color = document.querySelector("#select");
-        //color değişkenine change etkinliği etkinliği atandı ve fonksiyon ismi parametre olarak atandı
+        //**color değişkenine change etkinliği etkinliği atandı ve fonksiyon ismi parametre olarak atandı
         color.addEventListener('change', selectBox);
 
-        //selectBox isimli fonksiyon ile selectbox her seçildiğinde etkinlik tipi =change ve değeri consola yazılmaktadır 
+        //**selectBox isimli fonksiyon ile selectbox her seçildiğinde etkinlik tipi =change ve değeri consola yazılmaktadır 
         function selectBox(event) {
             console.log("Etkinlik tipi : " + event.type);
             console.log("deger : " + event.target.value);
 
-            // Selectbox içinde "blue" değerini seçtiğimiz takdirde;
-            // ekran çıktısı: Etkinlik tipi : change, deger : blue﻿      
+            //** Selectbox içinde "blue" değerini seçtiğimiz takdirde;
+            //** ekran çıktısı: Etkinlik tipi : change, deger : blue﻿      
         }
     </script> -->
 
