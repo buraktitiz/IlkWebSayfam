@@ -20,7 +20,6 @@ const alertFunction = (title, message, className = "warning") => `
 `
 
 
-
 function formHandler(event) {
     event.preventDefault()
     const USER_NAME = document.querySelector("#username")
@@ -30,7 +29,7 @@ function formHandler(event) {
         USER_NAME.value = ""
         SCORE.value = ""
     } else {
-        alertDOM.innerHTML = alertFunction("Başlık Bilgisi", "Eksik Bilgi Girdiniz", "danger")
+        alertDOM.innerHTML = alertFunction("Başlık bilgisi bulunamadı.", "Eksik bilgi girdiniz", "danger")
     }
 }
 /* formHandler fonksiyonu event parametresini alıyor. Daha sonrasında event.preventDefault() fonksiyonu ile submit anında sayfanın yenilenmesini engellemiş oluyoruz. Hemen sonraki satırlarda html dosyasından username ve score id'lerini querySelector ile çağırıp bunların değerlerini listeye eklemek için görülen addItem adlı fonksiyona yolluyoruz. */
