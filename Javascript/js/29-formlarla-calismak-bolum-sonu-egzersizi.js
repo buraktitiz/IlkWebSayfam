@@ -9,13 +9,34 @@
 
 let userFormDOM = document.querySelector('#userForm');
 userFormDOM.addEventListener('submit', formHandler);
+/* Öncelikle index.html'de bulunan HTML dosyasından, form seçimi yapabilmek için gerekli id'yi alıyoruz. Burada form elementinin id'si userForm'da görüldüğü üzere userForm id'si querySelector fonksiyonu ile alınmıştır. Daha sonrasında addEventListener fonksiyonu ile "submit" olayı gerçekleştiğinde bu html elementinde ne olması gerektiği ifade edilmiştir. Submit olduğunda formHandler fonksiyonu çağırılıyor */
+const alertDOM = document.querySelector("#alert")
+
+const alertFunction = (title, message, className = "warning") => `
+<div class="alert alert-${className} alert-dismissible fade show" role="alert">
+<strong>${title}</strong> ${message}
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+`
+
+
 
 function formHandler(event) {
     event.preventDefault()
     const USER_NAME = document.querySelector("#username")
     const SCORE = document.querySelector("#score")
-    addItem(USER_NAME.value, SCORE.value);
+    if (USER_NAME.value && SCORE.value) {
+        addItem(USER_NAME.value, SCORE.value) // gönderdikten sonra sıfırladık
+        USER_NAME.value = ""
+        SCORE.value = ""
+    } else {
+        alertDOM.innerHTML = alertFunction("Başlık Bilgisi", "Eksik Bilgi Girdiniz", "danger")
+    }
 }
+/* formHandler fonksiyonu event parametresini alıyor. Daha sonrasında event.preventDefault() fonksiyonu ile submit anında sayfanın yenilenmesini engellemiş oluyoruz. Hemen sonraki satırlarda html dosyasından username ve score id'lerini querySelector ile çağırıp bunların değerlerini listeye eklemek için görülen addItem adlı fonksiyona yolluyoruz. */
+
+
+
 
 let userListDOM = document.querySelector('#userList')
 const addItem = (username, score) => {
