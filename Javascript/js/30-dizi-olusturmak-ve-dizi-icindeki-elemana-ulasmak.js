@@ -9,3 +9,4 @@
 /* Array içindeki son elemanın çağırılması */
 
 /* değişken içindeki bilginin Array olup olmadığının kontrol edilmesi */
+
