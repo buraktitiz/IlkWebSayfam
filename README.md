@@ -65,6 +65,15 @@
 |[21-Arrow Function Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/21-arrow-function-kullanimi.js)
 |[22-DOM Etkinliğiyle Çalışmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/22-dom-etkinlikleriyle-calismak.js)
 |[23-Fonksiyon Bölüm Sonu Çalışması](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/23-fonksiyon-bolum-sonu-calismasi.js)
+|[24-LocaStorage Üzerinden Bilgi Almak, Düzenlemek ve Silmek](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/24-localStorage-uzerinden-bilgi-almak-duzenlemek-ve-silmek.js)
+|[25-LocaStorage İçerisinde Farklı Türden Bilgilerin Saklanması](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/25-localStorage-icerisinde-farkli-turden-bilgilerin-saklanmas%C4%B1.js)
+|[26-LocalStorage Bölüm Sonu Egzersizi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/26-locaStorage-bolum-sonu-egzersizi.js)
+|[27-Form-Submit Yönetimi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/27-form-submit-yonetimi.js)
+|[28-İnput İçerisindeki Bilgiyi Almak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/28-input-icerisindeki-veriyi-almak.js)
+|[29-Formlarla Çalışmak Bölüm Sonu Egzersizi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/29-formlarla-calismak-bolum-sonu-egzersizi.js)
+|[30-Dizi Oluşturmak ve Dizi İçindeki Elemana Ulaşmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/30-dizi-olusturmak-ve-dizi-icindeki-elemana-ulasmak.js)
+
+
 
 ## JavaScript Ödevler
 
