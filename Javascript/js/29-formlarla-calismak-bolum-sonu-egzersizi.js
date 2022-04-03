@@ -49,3 +49,4 @@ const addItem = (username, score) => {
     )
     userListDOM.append(liDOM)
 }
+
