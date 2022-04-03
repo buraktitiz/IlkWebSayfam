@@ -78,4 +78,4 @@ function addStudent(refreshCallback) {
 function refreshStudentList() {
     console.log('Hello')
 }
-console.log(addStudent(refreshStudentList)) 
+addStudent(refreshStudentList)
