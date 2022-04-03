@@ -35,7 +35,7 @@ console.log(String(reverseNumber("evin bahçesi")))
 
 
 /* //Geçilen bir dizgenin palindrom olup olmadığını kontrol etmek
-// Palindrom, ileriye doğru aynı şekilde geriye doğru okunan bir kelime, cümle veya dizidir
+Palindrom, ileriye doğru aynı şekilde geriye doğru okunan bir kelime, cümle veya dizidir
 function checkPalindrom(strEntry) {
 var cstr = strEntry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
 var ccount=0;
@@ -66,3 +66,16 @@ checkPalindrom('madam')
 checkPalindrom('nursesrun')
 checkPalindrom('fox')
  */
+
+
+
+
+// Bir 'JavaScript işlevi'ni parametre olarak iletmek için bir JavaScript programı
+function addStudent(refreshCallback) {
+    refreshCallback()
+}
+
+function refreshStudentList() {
+    console.log('Hello')
+}
+console.log(addStudent(refreshStudentList)) 
