@@ -101,6 +101,9 @@ let cevreHesaplama = sides => {
 }
 console.log(cevreHesaplama ([6,8,10]))
  */
+
+
+
 /* 
 //**Üçgenin alanını hesaplama ( (taban uzunluk*yükseklik)/2 )
 let hesapla = []
@@ -110,3 +113,49 @@ let alanhesapla = hesapla => {
     return sonuc
 }
 console.log(alanhesapla([5,6])) */
+
+
+
+
+/* //* Bir argüman nesnesi, for döngüsü kullanılarak yinelenebilir.
+function ShowMessage() {
+    for (let i = 0; i <arguments.length; i++) {
+        alert(arguments[i])
+    }
+}
+ShowMessage("Steve","Jobs",100) */
+
+
+
+/* 
+//* Bir işlev, return anahtar sözcüğünü kullanarak sıfır veya bir değer döndürebilir.
+function yeniNesne(ilk,son) {
+    return sonuc=(ilk+son)
+}
+console.log(yeniNesne(10,20)) //30
+*********
+
+function mmultiply(yeni,eski){
+    return sonuclar=(yeni*eski)
+}
+console.log(mmultiply(10)) //NaN
+console.log(mmultiply(10,20)) //200
+********
+
+function yeniDeger(yeni1,eski1=50){
+    return sonuclar=(yeni1*eski1)
+}
+console.log(yeniDeger(10)) // 500 (10*50)
+console.log(yeniDeger(10,20)) //200 (10*20)
+**********
+
+
+function Sum(val1, val2) {
+    return val1 + val2;
+};
+var result = Sum(10, 20); // returns 30
+function Multiply(val1, val2) {
+    console.log(val1 * val2);
+};
+result = Multiply(10, 20); // 200
+*/
