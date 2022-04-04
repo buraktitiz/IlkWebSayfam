@@ -1,4 +1,4 @@
-/*  Fonksiyonlar Bölüm Sonu Çalışmaları */
+/* //**Fonksiyonlar Bölüm Sonu Çalışmaları */
 /* let counter = 0
 let counterDOM = document.querySelector('#counter')
 let increaseDOM = document.querySelector('#increase')
@@ -22,7 +22,7 @@ function clickEvent() {
 } */
 
 
-/* // Bir fonksiyonu ters çevirmek
+/* //** Bir fonksiyonu ters çevirmek
 function reverseNumber(n) {
     n=n+""
     return n.split('').reverse().join('')
@@ -34,7 +34,7 @@ console.log(String(reverseNumber("evin bahçesi")))
 
 
 
-/* //Geçilen bir dizgenin palindrom olup olmadığını kontrol etmek
+/* //**Geçilen bir dizgenin palindrom olup olmadığını kontrol etmek
 Palindrom, ileriye doğru aynı şekilde geriye doğru okunan bir kelime, cümle veya dizidir
 function checkPalindrom(strEntry) {
 var cstr = strEntry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
@@ -70,7 +70,7 @@ checkPalindrom('fox')
 
 
 
-// Bir 'JavaScript işlevi'ni parametre olarak iletmek için bir JavaScript programı
+/* // ** Bir 'JavaScript işlevi'ni parametre olarak iletmek için bir JavaScript programı
 function addStudent(refreshCallback) {
     refreshCallback()
 }
@@ -78,4 +78,35 @@ function addStudent(refreshCallback) {
 function refreshStudentList() {
     console.log('Hello')
 }
-addStudent(refreshStudentList)
+addStudent(refreshStudentList) */
+
+
+
+
+//** Girdi olarak ülke adları listesini kabul eden ve çıktı olarak en uzun ülke adlarının adını döndüren bir JavaScript işlevi
+/* function uzunUlkeAdiBul(ulkeler) {
+    return ulkeler.reduce(function(lname,country){
+        return lname.length >country.length?lname:country;
+    },"")
+}
+console.log(uzunUlkeAdiBul(["Avustralya","Almanya","Amerika Birleşik Devletleri"])) */
+
+
+/* //**Üçgenin çevresini hesaplama(a+b+c)
+let sides = []
+let cevreHesaplama = sides => {
+    let [a, b, c] = sides;
+    let sp = (a + b + c)
+    return sp
+}
+console.log(cevreHesaplama ([6,8,10]))
+ */
+/* 
+//**Üçgenin alanını hesaplama ( (taban uzunluk*yükseklik)/2 )
+let hesapla = []
+let alanhesapla = hesapla => {
+    let [uzunluk, yukseklik] = hesapla
+    const sonuc = ((uzunluk * yukseklik) / 2)
+    return sonuc
+}
+console.log(alanhesapla([5,6])) */
