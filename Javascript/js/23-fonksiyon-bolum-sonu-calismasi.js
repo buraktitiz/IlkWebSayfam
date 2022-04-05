@@ -162,10 +162,10 @@ result = Multiply(10, 20); // 200
 
 
 
-
+////////////////////////////////
 //program to print the text
 //declaring a function
-function greet(name) {
+/* function greet(name) {
     console.log("Hello "+name+"."+" How are you?");
 }
 
@@ -174,4 +174,4 @@ function greet(name) {
 let name1=prompt("Enter a name:")
 
 //calling function
-greet(name1);
+greet(name1); */
