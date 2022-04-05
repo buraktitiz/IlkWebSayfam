@@ -160,3 +160,18 @@ function Multiply(val1, val2) {
 result = Multiply(10, 20); // 200
 */
 
+
+
+
+//program to print the text
+//declaring a function
+function greet(name) {
+    console.log("Hello "+name+"."+" How are you?");
+}
+
+
+//veriable name can be different
+let name1=prompt("Enter a name:")
+
+//calling function
+greet(name1);
