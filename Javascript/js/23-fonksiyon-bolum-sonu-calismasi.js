@@ -159,3 +159,4 @@ function Multiply(val1, val2) {
 };
 result = Multiply(10, 20); // 200
 */
+
