@@ -23,7 +23,7 @@ console.log(items[0]) // dizinin ilk elemanına ulaştı
 
 
 /* Array içindeki ortasındaki elemanın çağırılması */
-console.log("ortadaki eleman: ",items[Math.floor(items.length/2)])
+console.log("ortadaki eleman: ", items[Math.floor(items.length / 2)])
 
 
 
@@ -33,7 +33,7 @@ console.log(items[items.length - 1])
 
 
 /* değişken içindeki bilginin Array olup olmadığının kontrol edilmesi */
-console.log(typeof (items))
+console.log(typeof (items)) // items'ın hangi tipte olduğunu belirtiyor ->Çıktı şu şekilde: object
 
 
 console.log(Array.isArray(items))
@@ -41,6 +41,17 @@ console.log(Array.isArray(items))
 
 
 // hangileri isArray-> True verir?
-console.log("[]: ",Array.isArray([])) // içinde array olup olmadığını kontrol ediyor
+console.log("[]: ", Array.isArray([])) // içinde array olup olmadığını kontrol ediyor
 console.log("1: ", Array.isArray(1))
-console.log("true: ",Array.isArray(true))
+console.log("true: ", Array.isArray(true))
+
+
+let gunler = ['pazartesi', 'salı', 'çarşamba']
+gunler = ['perşembe', 'cuma', 'cumartesi', 'pazar']
+console.log(gunler) //** burada  ['perşembe','cuma','cumartesi','pazar'] çıktısını alacağız Çünkü let kullanarak oluşturulan bir array yeniden tanımlanabilir.
+
+
+// ** Fakat şu şekilde tanımlama yapsaydık aynı sonucu alamayacaktık:
+const gunler1 = ['pazartesi', 'salı', 'çarşamba'] 
+gunler1= ['perşembe', 'cuma', 'cumartesi', 'pazar']
+console.log(gunler1) // ** sebebi de const ile sabitlediğimiz için.
