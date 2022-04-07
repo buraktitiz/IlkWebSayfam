@@ -72,7 +72,8 @@
 |[28-İnput İçerisindeki Bilgiyi Almak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/28-input-icerisindeki-veriyi-almak.js)
 |[29-Formlarla Çalışmak Bölüm Sonu Egzersizi](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/29-formlarla-calismak-bolum-sonu-egzersizi.js)
 |[30-Dizi Oluşturmak ve Dizi İçindeki Elemana Ulaşmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/30-dizi-olusturmak-ve-dizi-icindeki-elemana-ulasmak.js)
-
+|[31-Array Yapısına Öge Eklemek ve Çıkarmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/31-array-yapisina-oge-eklemek-ve-cikarmak.js)
+|[32-Çok Kullanılan Array Metotları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/32-cok-kullanilan-array-dizi-metotlari.js)
 
 
 ## JavaScript Ödevler
