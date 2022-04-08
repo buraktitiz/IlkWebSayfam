@@ -126,7 +126,8 @@ console.log(sayilar) //1,2,3
 
 
 
-//** sone()
+//** some()
+// TRUE DÖNEBİLMESİ İÇİN DİZİDEKİ HERHANGİ BİR ELEMANIN FONKSİYONDAKİ KOŞULA UYMASI GEREKİR
 
 let someOrnekSayi = [4, 5, 6]
 
@@ -138,4 +139,37 @@ console.log(someSonuc) // dizinin içinde 5'ten büyük bir eleman bulunduğunda
 let someSonuc2 = someOrnekSayi.some(function (ornekSayi) {
     return ornekSayi < 3
 })
-console.log(someSonuc2) // dizinin içinde 3'ten küçük bir eleman bulunduğundan dolayı false döndürür
+console.log(someSonuc2) // dizinin içinde 3'ten küçük bir eleman bulunmadığından dolayı false döndürür
+
+
+
+//** every()
+// every() metodu belirtilen bir koşulun dizideki tüm elemanlara uyup uymadığını kontrol eder.
+// some metodunda olduğu gibi, boolean yani true veya false olarak döndürür
+// TRUE DÖNEBİLMESİ İÇİN DİZİDEKİ TÜM ELEMANLARIN FONKSİYONDAKİ KOŞULA UYMASI GEREKİR
+
+let everySayi = [4, 5, 6]
+
+let everySonuc1 = everySayi.every(function (everyOrnekSayi) {
+    return everyOrnekSayi > 3
+})
+console.log(everySonuc1) //dizideki tüm sayılar 3'ten büyük olduğundan dolayı sonuç false döner
+
+let everySonuc2 = everySayi.every(function (everyOrnekSayi) {
+    return everyOrnekSayi < 5
+})
+console.log(everySonuc2) // dizideki tüm sayılar 5'ten küçük olmadığından dolayı sonuç false döner
+
+
+//** filter()
+// filter metodu bir dizi içerisindeki belirli bir koşulu sağlayan elemanlar ile yeni bir dizi oluşturmamıza yani dizi elemanlarını filtrelememize yardımcu olur. 
+// yeni oluşacak diziyi bir değişkende saklıyoruz
+// Orijinal dizi aynı kalıyor, bozulmuyor
+
+let filterSayi = [1, 2, 3, 4, 5, 6, 7]
+
+let filtrelenmisSayilar = filterSayi.filter(function (filtreliSayiOrnek) {
+    return filtreliSayiOrnek > 3
+})
+console.log(filtrelenmisSayilar) // Orijinal diziyi 3'ten büyük olan sayılar için filtrelediğimizde yeni oluşacak dizi [4,5,6,7] olacaktır.
+console.log(filterSayi) // Orijinal dizi bozulmayacağından çıktıda [1,2,3,4,5,6,7] olarak görürüz.
