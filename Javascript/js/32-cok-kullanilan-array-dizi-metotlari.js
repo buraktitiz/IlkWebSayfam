@@ -21,19 +21,48 @@ console.log(items[0][0]) // Ayşe bilgisine ulaştık
 
 
 //**Array içerisinden öge ayırmak ->splice(pos,item?)
+let newItems=items.splice(1,5)
+console.log("newItems: ",newItems)
+console.log("items: ",items)
 
 
 //**Array içerisindeki ögenin index bilgisini bulmak -> indexOf('value')
+items.unshift("lorem")
+// console.log(items)
 
-
+items.push("ipsum")
+// console.log(items)
+console.log(items[items.indexOf("ipsum")]) // ipsum'u index içinde buluyoruz
+console.log(items.indexOf("ipsum")) //ipsum'un kaçıncı index'te olduğunu buluyoruz
 
 //**Array Kopyalamak -> slice, [...ES6]
+let copyItems = items
+console.log(items)
+
+copyItems.pop() // son ögeyi çıkarttık
+console.log("copyItems: ",copyItems)
+console.log("items: ",items)
+
+console.log("kopyalandıktan sonraki hali: ")
+copyItems=items.slice()
+copyItems.pop() 
+console.log("copyItems: ",copyItems)
+console.log("items: ",items)
+
+
+//**İki Array bilgisini birleştirmek -> [...ES6, ...ES6]
+let es6Items=[...items] // es6 ve sonrasında gelen kopyalama işlemi
+console.log(es6Items)
+
+
+let allUsers =[...femaleUsers,...maleUsers] // es birden fazla array yapısını birleştirmek
+console.log(allUsers)
 
 
 //**Array içerisindeki bilgiyi String'e çevirmek -> toString, join
 
 
-//**İki Array bilgisini birleştirmek -> [...ES6, ...ES6]
+
 
 
 //**İstediğimiz Index bilgisine öge eklemek -> splice(index,0,value)
