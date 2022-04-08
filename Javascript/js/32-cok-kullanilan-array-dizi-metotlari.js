@@ -60,10 +60,13 @@ console.log(allUsers)
 
 
 //**Array içerisindeki bilgiyi String'e çevirmek -> toString, join
-
-
-
+console.log(allUsers.toString())
+console.log(allUsers.join(' - '))
 
 
 //**İstediğimiz Index bilgisine öge eklemek -> splice(index,0,value)
+allUsers.splice(allUsers.length-1,0,"Melisa")
+console.log(allUsers)
 
+allUsers.splice(Math.floor(allUsers.length/2) ,0,"Lorem")
+console.log(allUsers)
