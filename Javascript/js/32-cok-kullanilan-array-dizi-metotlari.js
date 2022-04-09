@@ -173,3 +173,98 @@ let filtrelenmisSayilar = filterSayi.filter(function (filtreliSayiOrnek) {
 })
 console.log(filtrelenmisSayilar) // Orijinal diziyi 3'ten büyük olan sayılar için filtrelediğimizde yeni oluşacak dizi [4,5,6,7] olacaktır.
 console.log(filterSayi) // Orijinal dizi bozulmayacağından çıktıda [1,2,3,4,5,6,7] olarak görürüz.
+
+
+//** find()
+// find metodu belirtilen koşula uyum sağlayan dizi elemanını bulmamızı sağlar. Diğer metotların aksine find metodu elemanın kendisini döner.
+// koşulu sağlayan birden fazla eleman varsa bulunduğu ilk elemanı döner
+// koşulu sağlayan bir eleman bulamazsa undefined döner
+
+let findSayilar = [4, 5, 6, 7]
+
+let bulunacakSayi = findSayilar.find(function (ornekSayiFind) {
+    return ornekSayiFind === 5
+})
+console.log(bulunacakSayi) // Dizi içerisinde 5 eleman olarak bulunduğu için çıktıda elemanın kendisini yani 5 görmeyi bekleriz.
+
+let bulunacakSay2 = findSayilar.find(function (ornekSayiFind) {
+    return ornekSayiFind > 6
+})
+console.log(bulunacakSay2) // Dizi içerisinde 5'ten büyük birden fazla eleman olduğu için koşula uyan ilk elemanı yani 6'yı görmeyi bekleriz.
+
+let bulunacakSay3 = findSayilar.find(function (ornekSayiFind) {
+    return ornekSayiFind < 3
+})
+console.log(bulunacakSay3) // Dizi içerisinde 3'ten küçük bir eleman olmadığı için çıktıda undefined görmeyi bekleriz.
+
+
+//** sort()
+// sort metodu dizi içerisindeli elemanları sıralamaya yarar.
+// Orijinal idzi sıralanmış şekilde döner 
+// Eğer parametre olarak bir fonksiyon verilmezse dizinin elelmanları string'e çevrilir ve UTF-16 değerlerine göre sıralanır
+// Artan veya azalan için farklı bir yol izlenmelidir.
+let sortSayilar = [3, 5, 2, 4, 10, 14]
+
+sortSayilar.sort()
+console.log(sortSayilar)
+// Çıktı olarak [10, 2, 3, 4, 5] alırız. 
+//(Sayıların string halleri UTF-16 değerlerine göre sıralandıkları için)
+
+
+//** Fakat istediğimiz sonucun elde edilmesi açısından fonksiyon ile yapılırsa kodumuz şu şekilde olacaktır:
+let sortSayilar2 = [3, 5, 2, 4, 10, 14]
+
+sortSayilar2.sort(function (a, b) {
+    return a - b // a-b dediğimiz için en küçük değerden başlayarak sıralar. Ama b-a'yı return etseydik bu defa en büyük değerden başlayarak sıralayacaktı. 
+})
+console.log(sortSayilar2)
+
+
+
+
+//** DİZİ İÇERİSİNDE DİZİ OLUŞTURMA **************************************
+
+let diziIcindeDizi = [
+    ["elma", 3, 5, 7, 8],
+    ["armut", 5, 9, 12, 18],
+    ["şeftali", 2]
+]
+let ilkEleman = diziIcindeDizi[0]
+let ikinciEleman = diziIcindeDizi[1]
+let ucuncuEleman = diziIcindeDizi[2]
+
+console.log(ilkEleman) //["elma", 3]
+console.log(ikinciEleman) //["armut", 5]
+console.log(ucuncuEleman) //["şeftali", 2]
+
+
+let kacElma = diziIcindeDizi[0][3] // elma ilk dizimiz. Bu yüzden sıfır vermemiz gerekiyor. Ve sonrasında 3 verdiğimiz zaman elmanın 3. sıradaki değeri kaç ise onu ekrana yazdırıyor ->7
+console.log(kacElma)
+
+let kacArmut = diziIcindeDizi[1][2] // Armut ikinci dizimiz. Bu yüzden 1 vermemiz gerekiyor. Ve sonrasında 2 verdiğimiz zaman elmanın 2. sıradaki değeri kaç ise onu ekrana yazdırıyor ->9
+console.log(kacArmut)
+let kacSeftali = diziIcindeDizi[2][1] //Şeftali üçüncü dizimiz. Bu yüzden 2 vermemiz gerekiyor. Ve sonrasında 1 verdiğimiz zaman elmanın 1. sıradaki değeri kaç ise onu ekrana yazdırıyor ->2 (Eğer tanımlanmış değerden daha fazla index'in ekrana yazdırıllması istenirse sonuç undefined dönecektir)
+console.log(kacSeftali)
+
+
+
+
+// Kalemlik örneği
+let kalemlik = new Array()
+
+kalemlik[0] = new Array("silgi", 2, "mavi")
+kalemlik[1] = new Array("kalem", 3, "kırmızı")
+kalemlik[2] = new Array("cetvel", 7, "sarı")
+
+console.log(kalemlik) // Çıktı olarak [["silgi", 2, "mavi"], ["kalem", 3, "kırmızı"], ["Cetvel", 7, "siyah"]] şeklinde 3 elemanlı bir dizi döner.
+
+let silgiElemani = kalemlik[0] // Kalemlik dizisinin ilk elemanının birinci elemanı döner yani "silgi" dönmesini bekleriz.
+let kalemElemani = kalemlik[1] 
+let cetvelElemani = kalemlik[2]
+
+console.log(kalemlik[0][2]) // Kalemlik içerisindeki silgilerin rengini görüntülemek istersek:
+console.log(kalemlik[1][2])
+console.log(kalemlik[2][2])
+
+
+
