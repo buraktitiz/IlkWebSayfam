@@ -259,7 +259,7 @@ kalemlik[2] = new Array("cetvel", 7, "sarı")
 console.log(kalemlik) // Çıktı olarak [["silgi", 2, "mavi"], ["kalem", 3, "kırmızı"], ["Cetvel", 7, "siyah"]] şeklinde 3 elemanlı bir dizi döner.
 
 let silgiElemani = kalemlik[0] // Kalemlik dizisinin ilk elemanının birinci elemanı döner yani "silgi" dönmesini bekleriz.
-let kalemElemani = kalemlik[1] 
+let kalemElemani = kalemlik[1]
 let cetvelElemani = kalemlik[2]
 
 console.log(kalemlik[0][2]) // Kalemlik içerisindeki silgilerin rengini görüntülemek istersek:
@@ -267,4 +267,40 @@ console.log(kalemlik[1][2])
 console.log(kalemlik[2][2])
 
 
+
+
+//** Alıştırma1
+// Uygun dizi metotlarını kullanarak  yukarıda verilen dizinin elemanları içinde 10'dan büyük olan elemanların 5'er katından oluşan yeni bir dizi oluşturun. (sonuç [55, 75, 85] olmalı.)
+let alistirmaDizi1 = [2, 5, 8, 11, 15, 17]
+
+let ondanBuyukSayilar = alistirmaDizi1.filter(function (ornek1) {
+
+    return ornek1 > 10 // önce 10'dan büyük olan sayıları filtreledik
+})
+let sayilarinCarpimi = ondanBuyukSayilar.map(function (ornek1) {
+    return ornek1 * 5 // sonra da 10'dan büyük olan sayıları 5 ile çarptık
+})
+console.log(sayilarinCarpimi)
+
+
+
+//** Alıştırma2
+
+let alistirmaDizi2 = [3, 6, 9, 14, 16]
+
+// Uygun dizi metotlarını kullanarak yukarıdaki dizi için aşağıdaki şartları sağlayan myFunction fonksiyonunu yazın.
+// Elemanların arasında 5'ten büyük olan bir eleman varsa konsola "Beşten büyük bir eleman mevcut." yoksa "5'ten büyük eleman mevcut değil." yazdır.
+
+
+function myFunction(alistirmaDizi2) {
+    let sonuc= alistirmaDizi2.find(function(sayi){
+        return sayi>5
+    })
+        if (sonuc> 0) {
+            console.log("Beşten büyük bir eleman mevcut")
+        } else {
+            console.log("Beşten büyük bir eleman mevcut değil")
+        }
+}
+myFunction(alistirmaDizi2)
 
