@@ -308,12 +308,12 @@ myFunction(alistirmaDizi2)
 
 //** Alıştırma3
 
-let alistirmaDizi3=[2,3,4]
+let alistirmaDizi3 = [2, 3, 4]
 // Uygun bir dizi metodunu kullanarak yukarıda verilen dizinin elemanlarının çarpımının sonucunu (24) olarak veren fonksiyon
 
 
-let sayiCarpimlari=alistirmaDizi3.reduce (function(carpim,sayilar){
-    return carpim*sayilar
+let sayiCarpimlari = alistirmaDizi3.reduce(function (carpim, sayilar) {
+    return carpim * sayilar
 
 })
 console.log(sayiCarpimlari)
