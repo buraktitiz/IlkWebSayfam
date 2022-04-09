@@ -293,14 +293,27 @@ let alistirmaDizi2 = [3, 6, 9, 14, 16]
 
 
 function myFunction(alistirmaDizi2) {
-    let sonuc= alistirmaDizi2.find(function(sayi){
-        return sayi>5
+    let sonuc = alistirmaDizi2.find(function (sayi) {
+        return sayi > 5
     })
-        if (sonuc> 0) {
-            console.log("Beşten büyük bir eleman mevcut")
-        } else {
-            console.log("Beşten büyük bir eleman mevcut değil")
-        }
+    if (sonuc > 0) {
+        console.log("Beşten büyük bir eleman mevcut")
+    } else {
+        console.log("Beşten büyük bir eleman mevcut değil")
+    }
 }
 myFunction(alistirmaDizi2)
 
+
+
+//** Alıştırma3
+
+let alistirmaDizi3=[2,3,4]
+// Uygun bir dizi metodunu kullanarak yukarıda verilen dizinin elemanlarının çarpımının sonucunu (24) olarak veren fonksiyon
+
+
+let sayiCarpimlari=alistirmaDizi3.reduce (function(carpim,sayilar){
+    return carpim*sayilar
+
+})
+console.log(sayiCarpimlari)
