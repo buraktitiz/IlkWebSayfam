@@ -74,7 +74,7 @@
 |[30-Dizi Oluşturmak ve Dizi İçindeki Elemana Ulaşmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/30-dizi-olusturmak-ve-dizi-icindeki-elemana-ulasmak.js)
 |[31-Array Yapısına Öge Eklemek ve Çıkarmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/31-array-yapisina-oge-eklemek-ve-cikarmak.js)
 |[32-Çok Kullanılan Array Metotları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/32-cok-kullanilan-array-dizi-metotlari.js)
-|[33-For Döngüsü Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/commit/8914a2b2e0dfb18b83debd39d66bf9a697ee71c4)
+|[33-For Döngüsü Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/33-for-dongusu-kullanimi.js)
 
 
 ## JavaScript Ödevler
