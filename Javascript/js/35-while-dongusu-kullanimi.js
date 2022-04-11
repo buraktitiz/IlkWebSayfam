@@ -8,8 +8,8 @@
 // }
 
 
-let whileOrnek="";
-while (whileOrnek=="") {
-    whileOrnek = prompt("Kullanıcı Adınızı Giriniz: ")
-    console.log(whileOrnek)
-}
+// let whileOrnek="";
+// while (whileOrnek=="") {
+//     whileOrnek = prompt("Kullanıcı Adınızı Giriniz: ")
+//     console.log(whileOrnek)
+// }
