@@ -35,8 +35,8 @@ function newElement() {
     li.appendChild(t)
     if (inputValue === '') {
         alert("Listeye boş ekleme yapamazsınız")
-        
-    }  else {
+
+    } else {
         document.getElementById("list").appendChild(li)
         alert("Listeye Eklendi")
     }
