@@ -49,7 +49,11 @@ let baskaBirObje = {
 }
 console.log(obje == baskaBirObje); // false
 
-/* Bu örnekte görüldüğü gibi, aynı primitive değerlere sahip olan “mesaj” ve “başkaBirMesaj” isimli değişkenler eşit kabul ediliyor. Fakat “obje” ve “başkaBirObje” isimli objeler de bire bir aynı değerleri barındırmalarına rağmen eşit kabul edilmiyorlar. Çünkü bu iki obje, arka planda göremediğimiz iki ayrı hafıza adresiyle tanınıyorlar, bu yüzden içerikleri aynı olsa da farklı kabul ediliyorlar. */
+/* Bu örnekte görüldüğü gibi, aynı primitive değerlere sahip olan “mesaj” ve “başkaBirMesaj 
+isimli değişkenler eşit kabul ediliyor. Fakat “obje” ve “başkaBirObje” isimli objeler de bire
+bir aynı değerleri barındırmalarına rağmen eşit kabul edilmiyorlar. Çünkü bu iki obje, arka
+planda göremediğimiz iki ayrı hafıza adresiyle tanınıyorlar, bu yüzden içerikleri aynı olsa
+da farklı kabul ediliyorlar. */
 
 
 // ** Obje Oluşturmak
@@ -64,7 +68,7 @@ console.log(obje == baskaBirObje); // false
 
 
 //** 1. Object Literals
-// ** JavaScript'te obje oluşturmanın en kolay yolu olarak bilinir. Süslü parantez {} kullanılarak oluşturulan objenin içerdiği property'lerin değerleri iki nokta : işaretiyle belirtilir. Property'ler birbirlerinden virgül, yoluyla ayrılır.
+// ** JavaScript'te obje oluşturmanın en kolay yolu olarak bilinir. Süslü parantez {}kullanılarak oluşturulan objenin içerdiği property'lerin değerleri iki nokta : işaretiyle belirtilir. Property'ler birbirlerinden virgül, yoluyla ayrılır.
 
 let countriesTalkUkrainen = {
     continent: "europe",
@@ -75,7 +79,12 @@ let countriesTalkUkrainen = {
 
 
 // 2. New Keyword ile Obje Oluşturmak
-/* New keyword'ü yeni bir obje oluşturup başlatır. Oluşturulurken belli başlı bazı constructor invocation’lardan(kurucu çağrılarından) birini(Object, Array, Date vb.) yazmak ve sonuna mutlaka fonksiyon çağrısı olduğunu belirten parantezleri () eklemek gerekir. Fonksiyon çağrısı, objenin başlatılması için olmazsa olmazdır. Aşağıdaki örnekte standart object invocation kullanarak, Türkçe konuşulan Asya ülkeleri objesini oluşturalım ve tıpkı bir önceki örnekte olduğu gibi, language ve continent property'leri verelim. */
+/* New keyword'ü yeni bir obje oluşturup başlatır. Oluşturulurken belli başlı bazı
+constructor invocation’lardan(kurucu çağrılarından) birini(Object, Array, Date vb.) yazmak ve
+sonuna mutlaka fonksiyon çağrısı olduğunu belirten parantezleri () eklemek gerekir. Fonksiyon
+çağrısı, objenin başlatılması için olmazsa olmazdır. Aşağıdaki örnekte standart object
+invocation kullanarak, Türkçe konuşulan Asya ülkeleri objesini oluşturalım ve tıpkı bir
+önceki örnekte olduğu gibi, language ve continent property'leri verelim. */
 
 let countriesTalkTurkish = new Object();
 countriesTalkTurkish.continent = "asia";
@@ -85,16 +94,24 @@ countriesTalkTurkish.language = "turkish";
 
 
 // Object Prototype
-/* Son yöntem olan Object.create() yöntemine geçmeden önce, prototype hakkında bilgi sahibi olmak, son yöntemi anlamak için önemli. Javascript’te hemen her objenin bağlantılı olduğu ikinci bir obje vardır ve bu ikinci objelere prototype denir. Mevcut obje, ikinci objeden yani prototype’ından kalıtım(inheritence) alır. Object literal yöntemiyle oluşturulan her objenin prototipi aynıdır: object.prototype. New keyword'ü kullanılarak oluşturulan objelerin ise nereden kalıtım alacakları, function invocation’larına göre değişiklik gösterebilir. Örneğin new Date() objesi, hem object.prototype’ın kalıtımını alırken hem de date.prototype’dan kalıtım alır. */
+/* Son yöntem olan Object.create() yöntemine geçmeden önce, prototype hakkında bilgi sahibi
+olmak, son yöntemi anlamak için önemli. Javascript’te hemen her objenin bağlantılı olduğu
+ikinci bir obje vardır ve bu ikinci objelere prototype denir. Mevcut obje, ikinci objeden
+yani prototype’ından kalıtım(inheritence) alır. Object literal yöntemiyle oluşturulan her objenin prototipi aynıdır: object.prototype. New keyword'ü kullanılarak oluşturulan objelerin
+ise nereden kalıtım alacakları, function invocation’larına göre değişiklik gösterebilir.
+Örneğin new Date() objesi, hem object.prototype’ın kalıtımını alırken hem de date
+prototype’dan kalıtım alır. */
 
 
 // 3. Object.create
-/* Obje oluşturmadaki son yöntem olan object.create() yöntemi, yeni bir obje oluştururken nereden kalıtım alacağına karar vermemizi sağlayan bir yöntemdir. Aşağıda yer alan örneklere bir bakalım; */
+/* Obje oluşturmadaki son yöntem olan object.create() yöntemi, yeni bir obje oluştururken
+nereden kalıtım alacağına karar vermemizi sağlayan bir yöntemdir. Aşağıda yer alan örneklere
+bir bakalım; */
 
 let noInheritence = Object.create(null); // herhangi bir kalıtım (inheritence) almaz. Herhangi bir yerden kalıtım almasını istemediğimiz bir obje oluşturmak istediğimizde null parametresini atamak yeterli olacaktır.
 
 let standartObject = Object.create(Object.prototype) //Standart obje kalıtımı alır. standartObject isimli obje örneği, object literal ve new object keyword ile oluşturulan objelerin prototiplerini parametre olarak aldığı için, onlar gibi çalışır.
 
-let cyprus = Object.create(countriesTalkTurkish); // cyprus isimli obje örneği ise daha önce oluşturduğumuz countriesTalkTurkish isimli object literal’dan kalıtım alacağı için onunla aynı property'lere sahip olur. Yani argentina objesi, Asya kıtasında bulunduğunu ve Türkçe konuşulduğunu, kalıtım yoluyla sahip olduğu property'lerden belli eder.
+let cyprus = Object.create(countriesTalkTurkish); // cyprus isimli obje örneği ise daha önceoluşturduğumuz countriesTalkTurkish isimli object literal’dan kalıtım alacağı için onunla aynı property'lere sahip olur. Yani argentina objesi, Asya kıtasında bulunduğunu ve Türkçe konuşulduğunu, kalıtım yoluyla sahip olduğu property'lerden belli eder.
 
 cyprus.capital = "lefkosa"; // objeye, ülkenin başkentini belirten yeni bir property atadık. Artık elimizde başkentini, konuşulan dili ve hangi kıtada yer aldığını bildiğimiz bir ülke var.
