@@ -96,7 +96,7 @@ objectify("name", "Anna"); //  {name: "Anna"} atanmış yeni değer
 
 // Objelerin asıl amaçlarından biride yazılan uygulamaların state'lerini yönetmektir. Bu nedenle kompleks uygulamalarda da kompleks objeler kullanılmaktadır. Kompleks bir obje örneği de
 
-let state = {
+/* let state = {
     users: [{
             name: "Brock",
             age: 25,
@@ -124,7 +124,7 @@ let state = {
         website: "https://www.example.com/"
     },
     banList: ["Ash", "Angelica", "Tom", "Jerry"]
-}
+} */
 
 // Yukarıda gördüğünüz gibi obje içinde her türlü veri türünü saklayabiliyoruz. Örnekteki "users" property'si içinde obje tutan bir array'e denk gelmekte. "settings" property'sinde ise obje içinde obje tutulmakta. "banList" property'sinde ise basit bir array tutulmakta.
 
@@ -139,3 +139,61 @@ let state = {
 // "user"larda James'in en sevdiği rengi öğrenmek istersek, o veriye şu şekilde ulaşabiliriz.
 
 // alert(state.users[2].favoriteColor)
+
+
+// JSON Veri Tipini Obje Olarak Kullanmak
+
+// Değişmeyen ve statik olarak kullanmanız gereken verileri JSON derslerinde de anlatıldığı gibi ".json "dosya eklentisi ile bir dizinde kaydedip uygulamanızda bu değişmeyen verilerden yararlanmak isteyebilirsiniz. Projenizde JSON dosyalarıyla çalışabilmeniz için önce onu dosyada import etmeniz ve obje şekline çevirmeniz gerekmektedir. Bu işlem çok basit bir şekilde yapılabilir.
+
+// const veri = require("./dosyanizin/dizini/veri.json") // Bu işlemde require fonksiyonu ile dosyanızı import etmektesiniz
+
+// Bu işlemden sonra veri bileşenini obje şeklinde kullanabilirsiniz. 
+
+/* Özet
+
+* Objeler, birkaç özel niteliğe sahip ilişkilendirilebilir array(dizi)'lerdir.
+* Key / value şeklinde property'leri saklar.
+* Key ifadesi string veya sembol olmalıdır.
+* Value ifadesi herhangi bir değer alabilir.
+* Belli bir property'e erişmek için kullanabileceklerimiz: 
+  * Dot notation: obj.property 
+  * Square brackets notation obj[“property”]. Bu özellik key'in obj[varWithKey] gibi bir değişkenden alınmasına izin verir.
+
+Bu zamana kadar bahsettiğimiz objeler “plain object” olarak isimlendirilir. 
+ */
+// Obje Metodları
+
+// Plain objects için aşağıdaki metotlar(method) kullanılabilir:
+
+// Object.keys(obj) // Key’lerden oluşan bir array döner(return).
+// Object.values(obj) // Value’lardan oluşan bir array döner.
+// Object.entries(obj) // [key, value] çiftlerinden oluşan bir array döner. 
+
+// Tüm bu Object.* metotları array veri tipinde değer döner.
+
+// let person = {
+//     name: "Jack",
+//     age: 20
+// };
+// Object.keys(person) = ["name", "age"]
+// Object.values(person) = ["Jack", 20]
+// Object.entries(person) = [
+//     ["name", "Jack"],
+//     ["age", 20]
+// ]
+
+// JSON Metodları
+
+// Objenizi String veri türüne çevirip, projenizde objelerinizi direk sayfaya basmak isterseniz, onun içinde bir metot bulunmakta.
+
+let person = {
+    name: "Jack",
+    age: 20
+};
+
+document.getElementById("demo").innerHTML = JSON.stringify(person); // Bu objenizi bir stringe çevirip demo idsine basacaktır.
+
+let stringObject = JSON.stringify(person);
+
+let newPerson = JSON.parse(stringObject);
+// parse methodu da stringtify methodunun tersi olarak çalışır ve stringi objeye çevirir 
