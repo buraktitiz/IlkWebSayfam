@@ -79,6 +79,10 @@
 |[35-hile Döngüsü Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/35-while-dongusu-kullanimi.js)
 |[36-Array forEach Metodu](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/36-array-foreach-metodu.js)
 |[37-Array Filter Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/37-array-filter-kullanimi.js)
+|[38-Array Map Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/38-array-map-kullanimi.js)
+|[39-Object Nedir Nasıl Oluşturulur?](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/39-object-nedir-nasil-olusturulur.js)
+|[40-Object Key Value](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/40-object-key-value.js)
+|[41-Object İçinde Metot Nasıl Eklenir?](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/41-object-icinde-metot-nasil-ekleriz.js)
 
 ## JavaScript Ödevler
 
