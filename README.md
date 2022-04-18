@@ -75,7 +75,10 @@
 |[31-Array Yapısına Öge Eklemek ve Çıkarmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/31-array-yapisina-oge-eklemek-ve-cikarmak.js)
 |[32-Çok Kullanılan Array Metotları](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/32-cok-kullanilan-array-dizi-metotlari.js)
 |[33-For Döngüsü Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/33-for-dongusu-kullanimi.js)
-
+|[34-Break ve Continue Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/34-break-ve-continue-kullanimi.js)
+|[35-hile Döngüsü Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/35-while-dongusu-kullanimi.js)
+|[36-Array forEach Metodu](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/36-array-foreach-metodu.js)
+|[37-Array Filter Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/37-array-filter-kullanimi.js)
 
 ## JavaScript Ödevler
 
