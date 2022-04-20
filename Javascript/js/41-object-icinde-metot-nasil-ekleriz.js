@@ -1,1 +1,5 @@
-/* //** Object İçinde Mettot Nasıl Ekleriz */
+/* //** Object İçinde Metot Nasıl Ekleriz */
+
+
+
+
