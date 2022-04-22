@@ -99,7 +99,7 @@ Peki konumuz objeler ve objelere fonksiyon eklenmesi değil miydi? Fonksiyonlar�
     this.yas = yas;
 } */
 
-/* Yukarıda gördüğünüz yapının adı //**JavaScript Object Constructor*/ 
+/* Yukarıda gördüğünüz yapının adı //**JavaScript Object Constructor*/
 //Daha önce bir değişken yardımıyla obje tanımlamıştık. Class keyword'ünü kullanarak da bir sınıf tanımlayabiliyorduk. Yukarıdaki yapı ise fonksiyon kullanarak bir sınıf tanımlamamıza imkan sağlayan yapılardır. Bu şekilde bir obje mutable(mutasyona uğrayabilir daha az havalı haliyle özellikleri değiştirilebilir) bir Sınıf tanımlamış oluyoruz. Sınıf ile obje arasındaki farkı nesneye yönelik programlama konusunda daha detaylı öğrenebilirsiniz ancak burada bir obje şablonu oluşturduğumuzu söyleyebiliriz. Artık "new" anahtar kelimesi ile bu şablonda bir obje oluşturabiliriz. 
 
 /* const ali = new Insan("ali",21);
@@ -119,4 +119,22 @@ Peki sınıflarda bu durum nasıl oluyor? Sınıf olarak belirlediğimiz şablon
 
 İşte bu durumla karşılaştığımızda da prototype özelliği karşımıza çıkar. Peki prototype nedir? */
 
+/* Prototype, sınıflara JavaScript tarafından otomatik olarak eklenen bir objedir. Eklenmek burada çok doğru bir tabir değil. Aslında bütün objeler tarafından miras alınan bir özelliktir. Bu özelliği de "proto" key'i ile ekler. Bu prototype alanı içinde hem o objeyi kurduğumuz Sınıfın kurucu fonksiyonuna hem de proto objesine erişebiliriz. Bu prototype özelliğini kullanarak hem sınıfa hem objeye ihtiyacımız olan fonksiyonu ekleyebiliriz. Bu kısımların detayları JavaScript'te nesneye yönelik programlama konusuna ait olduğu için kapsamı genişletmeden birkaç örnek vererek konuyu tamamlayalım :
 
+Sınıfa Prototype yardımıyla fonksiyon eklemek : */
+
+/* 
+Sınıfa prototype yardımıyla fonksiyon eklemek
+Insan.prototype.yeniFonksiyon = () => {console.log("Merhaba Kodluyoruz")}
+const ayse = new Insan("ayşe",22);
+ayse.yeniFonksiyon();
+//**Output : "Merhaba Kodluyoruz" */
+
+
+/* Objeye prototype yardımıyla fonksiyon eklemek : */
+
+/* ayse.__proto__.enYeniFonksiyon = () => {console.log("Tekrar Merhaba Kodluyoruz!")}
+ayse.enYeniFonksiyon();
+Output : "Tekrar Merhaba Kodluyoruz!" */
+
+/* Bu tarz bir kullanıma özellikle büyük projelerde ihtiyacımız olabilir. Prototype özelliğini kullanarak da objelere ve sınıflara sonradan fonksiyonlar hatta farklı özellikler ekleyebiliriz. */
