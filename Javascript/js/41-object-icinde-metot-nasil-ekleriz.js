@@ -86,9 +86,37 @@ Fonksiyonlar JavaScript dilinde, Function sınıfının birer objeleridir. Nası
 const fonksiyonAdi = () => {console.log("Merhaba Kodluyoruz")}
 console.log(fonksiyonAdi.name);
 //** "fonksiyonAdi"
-
 */
 
+/* Yukarıdaki örnekte basit bir fonksiyon tanımladık ve bu fonksiyonun adını "." operatörüyle eriştik. console.log(fonksiyonAdi.name) kodunu çalıştırdıktan sonra "Merhaba Kodluyoruz" çıktısının gelmediğine dikkat edin. Burada fonksiyonu execute etmedik. Yalnızca bu objenin bir özelliğine eriştik.
 
+Öyleyse JavaScript'te fonksiyonların da birer obje olduğunu öğrendik. Peki daha önce öğrendiğimiz şekilde bu js fonksiyonlarına birer yeni özellik ekleyebilir miyiz?
+
+Peki konumuz objeler ve objelere fonksiyon eklenmesi değil miydi? Fonksiyonların özellikleriyle objelerin ne ilgisi var Firdevs hanım? Bu noktada da obje oluşturmanın yeni bir yöntemini öğreneceğiz. */
+
+/* function Insan(isim, yas) {
+    this.isim = isim;
+    this.yas = yas;
+} */
+
+/* Yukarıda gördüğünüz yapının adı //**JavaScript Object Constructor*/ 
+//Daha önce bir değişken yardımıyla obje tanımlamıştık. Class keyword'ünü kullanarak da bir sınıf tanımlayabiliyorduk. Yukarıdaki yapı ise fonksiyon kullanarak bir sınıf tanımlamamıza imkan sağlayan yapılardır. Bu şekilde bir obje mutable(mutasyona uğrayabilir daha az havalı haliyle özellikleri değiştirilebilir) bir Sınıf tanımlamış oluyoruz. Sınıf ile obje arasındaki farkı nesneye yönelik programlama konusunda daha detaylı öğrenebilirsiniz ancak burada bir obje şablonu oluşturduğumuzu söyleyebiliriz. Artık "new" anahtar kelimesi ile bu şablonda bir obje oluşturabiliriz. 
+
+/* const ali = new Insan("ali",21);
+console.log(ali.yas);
+// 21
+ */
+
+
+
+/* Böylece artık "ali" isminde bir objemiz hazırlanmış oldu. Peki bu fonksiyon yöntemini kullanarak bir obje hazırladığımızı düşünelim. Bu objeye sonradan ekstra bir fonksiyon eklemek istersek? Kafanız karışmasın fonksiyon kurucu yardımıyla hazırladığımız bir sınıf var ve bu Sınıfı kullanarak "new" anahtar kelimesiyle bir obje oluşturduk. Ancak zaman değişti ve artık bu sınıfta kullanmak üzere fazladan bir fonksiyon tanımlamak istiyoruz. Bu fonksiyonu/özelliği öyle bir şekilde eklemeliyiz ki olmayan bir fonksiyon/özellik eklemek istiyoruz. Objelere özellik eklemek konusunda bir problemimiz yok çünkü bunun mutable olduğunu biliyoruz .
+
+ali.yeniOzellik = "Sonradan eklenmiş bir özellik";
+console.log(ali.yeniOzellik);
+// "Sonradan eklenmiş bir özellik"
+
+Peki sınıflarda bu durum nasıl oluyor? Sınıf olarak belirlediğimiz şablona tanımı değiştirmeden nasıl fonksiyon veya özellik ekleyebiliriz?
+
+İşte bu durumla karşılaştığımızda da prototype özelliği karşımıza çıkar. Peki prototype nedir? */
 
 
