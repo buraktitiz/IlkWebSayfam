@@ -157,3 +157,52 @@ bolme(sayilar);
 Bu durumda ReferenceError: sayi2 is not defined yani sayı iki tanımlanmamış diye bir hata alırız, çünkü fonksiyona sayi2 göndersek bile fonksiyon içinde sayi2 ye olan erişimimizi tamamen kaybettik.
 
 Bu durum bu örnekteki gibi iki tane değer içeren objelerde problem değil ama eğer obje birçok değer içeriyor ise bu hata çok kez yapılan bir hata. Bu noktada spreading operator imdadımıza yetişiyor. */
+
+
+/* 
+Rest Operator
+
+Örneğin fonksiyonumuz ikiden fazla değer alması gerekiyor ise ne olacak? Örneğin bir toplama fonksiyonumuz var bu fonksiyon 5 sayıyı toplayacak.
+
+const toplama = ({ sayi1, sayi2 }) => { 
+// dikkat sadece 2 sayireturn sayi1 + sayi2 + sayi3 + sayi4 + sayi5;
+}
+const sayilar = {
+ sayi1: 8,
+ sayi2: 4,
+ sayi3: 7,
+ sayi4: 9,
+ sayi5: 11
+}
+toplama(sayilar); 
+//ReferenceError: sayi3 is not defined
+
+Örneğin fonksiyona gönderdiğimiz obje 5 tane sayı içeriyor ama biz sadece ilk ikisini destructure yaptık. Bu durumda sayi3 için bu şekilde hata alırız. ReferenceError: sayi3 is not defined
+
+Ama Rest Operator ile diyebiliriz ki sayi1 ve sayi2'yi destructure yap. Bu sefer de diğer sayıları kaybederiz. Bu durumda spreading operator ile diyebiliriz ki tamam destructuring yap ama geri kalan diğer sayıları da bana ver.
+
+const toplama = ({ sayi1, sayi2, ...args }) => {
+ let sonuc = sayi1 + sayi2;
+ for (let sayi in args){
+  sonuc += args[sayi];
+ }
+ return sonuc;
+}
+const sayilar = {
+ sayi1: 8,
+ sayi2: 4,
+ sayi3: 7,
+ sayi4: 9,
+ sayi5: 11
+}
+toplama(sayilar); 
+// 39 doner
+
+Yani burada {sayi1, sayi2, ...args} ile diyoruz ki sayi1 ve sayi2 destructure olsun ama geri kalanlar args değişkende obje olarak kalsın yani args { sayi3: 7, sayi4: 9, sayi5: 11 } seklinde bir obje kalır ve bu obje destructuring'ten arta kalan değerleri içeren bir objedir.
+
+Bir obje içindeki tüm değerleri de for...in ile teker teker dolaşabilir. for...in seklinde oluşturduğumuz döngü yani for (let sayi in args) satiri der ki args içindeki tüm property'lerin key'lerini dön bana. Bu döngüdeki sayi değişken her bir property için bize sayi3 , sayi4, sayi5 string anahtarını döner. Ama biz anahtar değil de değerleri almak istersek args[sayi] yazabiliriz. bu bize teker teker 7, 9, 11 sayılarını dönecektir ve toplama işlemine bunu bir döngüde dahil edebiliriz.
+
+Elbette gerçek hayat için mantıklı bir işlem değil bu ama spreading özelliğinin anlaşılması için böyle bir fonksiyon yazılabilir. hatta for...in yerine map() veya reduce() fonksiyonları kullanarak bu örnek daha da iyi hale getirilebilir.
+
+
+ */
