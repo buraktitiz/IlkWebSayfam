@@ -1,4 +1,4 @@
-let menu = [{
+const menu = [{
         id: 1,
         title: "Tteokbokki",
         category: "Korea",
@@ -63,48 +63,48 @@ let menu = [{
         img: "https://www.justonecookbook.com/wp-content/uploads/2011/10/Dorayaki-New-500x400.jpg",
         desc: `Red bean paste dessert, serving with honey.`,
     },
-]
+];
 
-let btnContainer = document.querySelector(".btn-container")
-let section = document.querySelector(".section-center")
+const btnContainer = document.querySelector(".btn-container")
+const section = document.querySelector(".section-center")
 
 
 /* Tekrarlanan kategorileri tekrar karşımıza getirmeyelim */
-let categories = menu.map((item) => item.category)
+const categories = menu.map((item) => item.category);
 
 
 /* Kategorilerin kopyalarını kaldıralım */
 function removeCategories(data) {
-    return [...newArray(data)]
+    return [...new Set(data)]
 }
-let cleanCategories = removeCategories(categories);
+const cleanCategories = removeCategories(categories);
 
 
 /* "Hepsi" bir kategori olmadığından dolayı manuel olarak uyguladık */
-cleanCategories.unshift("All")
+cleanCategories.unshift("All");
 
 
 /* Kategoriler için fonksiyon oluşturalım */
-function createButtons() {
+function createbtns() {
     cleanCategories.forEach((cleanCategories) => {
-        let button = document.createElement("button")
-        button.setAttribute("class", "btn btn-outline-dark btn-item")
-        button.setAttribute("id", cleanCategories)
+        const btn = document.createElement("btn");
+        btn.setAttribute("class", "btn btn-outline-dark btn-item");
+        btn.setAttribute("id", cleanCategories);
 
-        button.innerHTML = cleanCategories
-        button.setAttribute("data-id", cleanCategories)
-        buttonContainer.appendChild(button)
-    })
+        btn.innerHTML = cleanCategories;
+        btn.setAttribute("data-id", cleanCategories);
+        btnContainer.appendChild(btn);
+    });
 }
-createButtons()
+createbtns();
 
 
 /* Menü ögesini oluşturan fonksiyon oluşturalım */
 function createMenuItems(menu) {
     menu.forEach((item) => {
-        let menuItem = document.createElement("div")
-        menuItem.setAttribute("class", "menu-item col-6")
-        menuItem.setAttribute("data-id", "item.id")
+        const menuItem = document.createElement("div");
+        menuItem.setAttribute("class", "menu-item col-6");
+        menuItem.setAttribute("data-id", item.id);
         menuItem.innerHTML = `<div class="menu-items">
         <img src=${item.img} alt=${item.title} class="photo" />
         <div class="menu-info">
@@ -118,43 +118,43 @@ function createMenuItems(menu) {
         </div>
     </div>
         `
-        section.appendChild(menuItem)
-    })
+        section.appendChild(menuItem);
+    });
 }
-createMenuItems(menu)
+createMenuItems(menu);
 
 
 /* Tıklayınca kategorize edilmiş sonuçları almak için fonksiyon oluşturalım */
 function Korean() {
-    document.getElementById('Korea').addEventListener('click', () => {
-        let korean = menu.filter((item) => item.category === "Korea")
-        section.innerHTML = ""
-        createMenuItems(korean)
-    })
+    document.getElementById('Korea').addEventListener("click", () => {
+        const korean = menu.filter((item) => item.category === "Korea")
+        section.innerHTML = "";
+        createMenuItems(korean);
+    });
 }
-Korean()
+Korean();
 
 function Japan() {
-    document.getElementById('Japan').addEventListener('click', () => {
-        let japanese = menu.filter((item) => item.category === "Japan")
-        section.innerHTML = ""
-        createMenuItems(japanese)
-    })
+    document.getElementById('Japan').addEventListener("click", () => {
+        const japanese = menu.filter((item) => item.category === "Japan")
+        section.innerHTML = "";
+        createMenuItems(japanese);
+    });
 }
-Japan()
+Japan();
 
 function China() {
-    document.getElementById('China').addEventListener('click', () => {
-        let chinese = menu.filter((item) => item.category === "China")
-        section.innerHTML = ""
-        createMenuItems(chinese)
-    })
+    document.getElementById('China').addEventListener("click", () => {
+        const chinese = menu.filter((item) => item.category === "China")
+        section.innerHTML = "";
+        createMenuItems(chinese);
+    });
 }
-China()
+China();
 
 function All() {
-    document.getElementById('All').addEventListener('click', () => {
-        createMenuItems(menu)
-    })
+    document.getElementById('All').addEventListener("click", () => {
+        createMenuItems(menu);
+    });
 }
-All()
+All();
