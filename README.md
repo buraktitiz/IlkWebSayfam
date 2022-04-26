@@ -83,10 +83,14 @@
 |[39-Object Nedir Nasıl Oluşturulur?](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/39-object-nedir-nasil-olusturulur.js)
 |[40-Object Key Value](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/40-object-key-value.js)
 |[41-Object İçinde Metot Nasıl Eklenir?](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/41-object-icinde-metot-nasil-ekleriz.js)
+|[42- Object ve Array Destructuring Nasıl Kullanılır?](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/42-object-ve-array-destructuring-nasil-kullanilir.js)
+|[43- Hata Yönetimi İçin try-catch Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/43-hata-yonetimi-icin-try-catch-kullanimi.js)
+|[44-Fetch API İle Çalışmak](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Javascript/js/44-fetch-api-ile-calismak.js)
 
 ## JavaScript Ödevler
 
 |İçerik.
 |:---------------:
 |[Saat Karşılama Ödevi](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev1)
-
+|[To Do List](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev2)
+|[Asian Kitchen's Menu](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev3)
