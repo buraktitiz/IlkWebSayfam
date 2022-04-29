@@ -22,7 +22,6 @@
 | [CSS Class](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/css/cssclass)
 | [CSS Kutu Özellikleri](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/css/csskutuozellikleri)
 
-
 ## Bootstrap
 
 |İçerik.
@@ -36,7 +35,6 @@
 | [Renk Standartları, Tipografi, Margin ve Padding Kullanımı](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/ColorStandards)
 | [Bootstrap Instagram Clone](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/Instagram%20Clone)
 | [Bootstrap LinkedIn Clone](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Bootstrap/LinkedIn%20Clone)
-
 
 ## JavaScript
 
@@ -90,7 +88,7 @@
 ## JavaScript Ödevler
 
 |İçerik.
-|:---------------:
+|:--------------:
 |[Saat Karşılama Ödevi](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev1)
 |[To Do List](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev2)
 |[Asian Kitchen's Menu](https://github.com/buraktitiz/Patika-FrontEnd/tree/main/Javascript/odevler/odev3)
