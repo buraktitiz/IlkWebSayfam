@@ -165,3 +165,17 @@ const getPost = (post_id) => {
     console.log(users);
     console.log(post);
 })();
+
+
+//-------------------------------------------------------------------------------
+
+// Anonim fonksiyon işlem başarılı olduğunda "resolve" fonksiyonuna, 
+//işlem hatalı veya olumsuz olduğunda "reject" fonksiyonuna parametrelerine 
+//yazılan bilgileri iletir.
+
+
+// Promise nesnesini, nesne değişken adı ile birlikte kullanıyoruz.
+
+
+// İşlem başarılıysa yani resolve çağrılmışsa "then" metodu, 
+//işlem başarısızsa yani reject çağrılmışsa "catch" metodu çalıştırılır.
