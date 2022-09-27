@@ -29,13 +29,15 @@ import "./App.js";
 
 const name="Burak"
 const surname="TİTİZ"
+const isLoggedIn = true;
 
 function App() {
   return (
     <>
       {/* <h1>{name} {surname}</h1> */}
-      <h1>{`Benim adım ${name}, soyadım ${surname}`}</h1>
-      
+      <h1>{isLoggedIn ? `Benim adım ${name}, soyadım ${surname}`:"Giriş yapmadınız"}</h1>
+      {/* isLoggedIn ? ifadesi true ise ilk belirtileni yap,
+          : ifadesi false ise diğer belirtileni yap*/}
     </>
   )
 }
