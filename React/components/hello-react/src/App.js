@@ -31,10 +31,19 @@ import Header from "./components/Header"
 
 function App() {
   return (
-    <div>
+    <>
       <h1>Hello React!</h1>
       <Header />
-    </div>
+      <p className="xyz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, cum delectus quaerat fugit iusto hic libero veniam excepturi laboriosam mollitia amet impedit obcaecati necessitatibus ab. Mollitia velit cum minima? Fuga?</p>
+
+      <label htmlFor="myinput">
+        Name:
+        <input id="myinput" />
+      </label>
+    
+    
+
+    </>
   )
 }
 
