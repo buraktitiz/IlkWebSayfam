@@ -27,22 +27,15 @@
 
 import "./App.js";
 
-import Header from "./components/Header"
+const name="Burak"
+const surname="TİTİZ"
 
 function App() {
   return (
     <>
-      <h1>Hello React!</h1>
-      <Header />
-      <p className="xyz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, cum delectus quaerat fugit iusto hic libero veniam excepturi laboriosam mollitia amet impedit obcaecati necessitatibus ab. Mollitia velit cum minima? Fuga?</p>
-
-      <label htmlFor="myinput">
-        Name:
-        <input id="myinput" />
-      </label>
-    
-    
-
+      {/* <h1>{name} {surname}</h1> */}
+      <h1>{`Benim adım ${name}, soyadım ${surname}`}</h1>
+      
     </>
   )
 }
