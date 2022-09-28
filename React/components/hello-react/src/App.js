@@ -29,12 +29,25 @@ import "./App.css";
 
 import User from "./components/User";
 
-
+const friends = [
+  {
+    id:1,
+    name:"Ahmet",
+  },
+  {
+    id:2,
+    name:"Mehmet",
+  },
+  {
+    id:3,
+    name:"Ayşe",
+  },
+];
 
 function App() {
   return (
     <>
-    <User name="Burak" surname="TİTİZ" age={32} isLoggedIn={true} />
+    <User name="Burak" surname="TİTİZ" isLoggedIn={true} age={32} friends={friends}/>
     </>
   );
 }
