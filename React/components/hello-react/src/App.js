@@ -25,21 +25,18 @@
 // export default App;
 
 
-import "./App.js";
+import "./App.css";
 
-const name="Burak"
-const surname="TİTİZ"
-const isLoggedIn = true;
+import User from "./components/User";
+
+
 
 function App() {
   return (
     <>
-      {/* <h1>{name} {surname}</h1> */}
-      <h1>{isLoggedIn ? `Benim adım ${name}, soyadım ${surname}`:"Giriş yapmadınız"}</h1>
-      {/* isLoggedIn ? ifadesi true ise ilk belirtileni yap,
-          : ifadesi false ise diğer belirtileni yap*/}
+    <User name="Burak" surname="TİTİZ" age={32} isLoggedIn={true} />
     </>
-  )
+  );
 }
 
 export default App;
