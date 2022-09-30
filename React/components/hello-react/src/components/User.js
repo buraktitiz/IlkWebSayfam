@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-function User({ name, surname, age, isLoggedIn, friends, address }) {
+function User({ name, surname, age, isLoggedIn, friends,address }) {
     return (
         <>
-        <h1>{isLoggedIn ? `${name} ${surname} (${age})`:"Giriş yapmadınız"}</h1>
+        { <h1>{isLoggedIn ? `${name} ${surname} (${age})`:"Giriş yapmadınız"}</h1> }
 
         {address.title} {address.zip}
         {friends && 
@@ -25,5 +25,9 @@ User.propTypes={
         zip: PropTypes.number,
     }),
 }
+
+/* User.defaultProps = {
+    isLoggedIn:false,
+} */
 
 export default User;

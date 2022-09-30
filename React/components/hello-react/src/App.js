@@ -47,7 +47,7 @@ const friends = [
 function App() {
   return (
     <>
-    <User name="Burak" surname="TİTİZ" isLoggedIn={true} age={32} friends={friends} adress={{title: "Kadıköy/İstanbul", zip:34500}}/>
+    <User name="Burak" surname="TİTİZ" isLoggedIn={true} age={32} friends={friends} address={{title: "Kadıköy/İstanbul", zip:34500}}/>
     </>
   );
 }
