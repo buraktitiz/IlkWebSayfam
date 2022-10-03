@@ -5,12 +5,14 @@ function Counter() {
     
     useEffect(() =>{
     console.log('Component mount edildi'); // ilk kez yüklendiği an
-    setInterval(() =>{
+
+    const interval=setInterval(() =>{
         setNumber((n) =>n+1);
     },1000);
+
+    return()=>clearInterval(interval);
     },[]);
     
-
 useEffect(() =>{
     console.log('number state güncellendi');
 }, [number]);

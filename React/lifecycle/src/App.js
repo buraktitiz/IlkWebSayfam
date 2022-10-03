@@ -7,6 +7,7 @@ return <div className="App">
   {isVisible && <Counter />}
 
 <br />
+
   <button onClick={()=>setIsVisible(!isVisible)}>Toggle Counter</button>
 </div>
 }
