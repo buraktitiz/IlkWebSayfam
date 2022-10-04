@@ -11,7 +11,7 @@ console.log(contacts);
 },[contacts]);
 
     return <div>
-        <List />
+        <List contacts={contacts} />
         <Form addContact={setContacts} contacts={contacts} />
     </div>
 }
