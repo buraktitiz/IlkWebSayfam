@@ -11,6 +11,7 @@ function User() {
   useEffect(() =>{
     axios(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then((res)=>setUser(res.data))
+    .catch( (e) => setUser("This user is not found!", e))
     .finally(()=>setLoading(false));
   }, [id])
 
