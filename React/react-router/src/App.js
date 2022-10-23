@@ -12,6 +12,7 @@ import {
 import About from './components/About'
 import Home from './components/Home'
 import Users from './components/Users'
+import User from './components/User'
 
 function App() {
   return (
@@ -34,9 +35,10 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+        <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/users" component={Users} />
-          <Route path="/" component={Home} />
+          <Route path="/user/:id" component={User} />
         </Switch>
       </div>
     </Router>
