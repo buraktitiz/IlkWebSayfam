@@ -4,6 +4,7 @@ import Button from './Button';
 import Header from './Header';
 
 import ThemeContext from '../context/ThemeContext'
+import Profile from './Profile';
 
 function Container() {
     const {theme}=useContext(ThemeContext);
@@ -11,9 +12,10 @@ function Container() {
     return (
     <div className={`app ${theme}`}>
         <Header />
-
-<hr />
-<Button />
+        <hr />
+        <Button />
+        <hr />
+        <Profile />
     </div>
     )
 }
