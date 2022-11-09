@@ -8,5 +8,18 @@ export const init=()=> {
         transports:["websocket"],
     });
     
-    socket.on("connect",()=>console.log("Sunucuya bağlantı başarıyla gerçekleşti"));
+    socket.on("connect",()=>
+    console.log("Sunucuya bağlantı başarıyla gerçekleşti")
+    );
 };
+
+export const send=(color)=>{
+    socket.emit("newColor",color);
+};
+
+export const subscribe=(cb)=>{
+    socket.on("receive",(color)=>{
+        console.log(color);
+        cb(color);
+    })
+}
