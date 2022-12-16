@@ -1,7 +1,7 @@
 import { Box, Center, Spacer, Stack } from "@chakra-ui/react"
 import type { NextPage } from "next"
 import Head from "next/head"
-import NavBar from "../components/Navbar"
+import NavBar from "../components/NavBar"
 import styles from "../styles/Home.module.css"
 import Disconnected from '../components/Disconnected'
 import { useWallet } from "@solana/wallet-adapter-react"
