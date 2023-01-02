@@ -135,6 +135,24 @@ async function main() {
   // Mint 100 tokens to our address
   await mintTokens(connection, user, mint, tokenAccount.address, user, 100)
 
+  const recipientTokenAccount = await token.getOrCreateAssociatedTokenAccount(
+    connection,
+    user,
+    mint,
+    new web3.PublicKey("BpnBxp5KvnupqYVutjYwyhmQi7wQrU5xZXXGRgZcKDSj")
+  )
+
+  await transferTokens(
+    connection,
+    user,
+    tokenAccount.address,
+    recipientTokenAccount.address,
+    user.publicKey,
+    50,
+    mint
+  )
+}
+
 }
 
 
