@@ -1,0 +1,33 @@
+{
+    "name": "Charizard",
+    "symbol": "POKEMON",
+    "description": " It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames. ",
+    "image": "4.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "flame"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "blaze"
+        },
+        {
+            "trait_type": "Type",
+            "value": "fire"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "water"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "orange"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "4.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}

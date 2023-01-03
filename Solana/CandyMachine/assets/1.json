@@ -1,0 +1,33 @@
+{
+    "name": "Squirtle",
+    "symbol": "POKEMON",
+    "description": "  When it retracts its long neck into its shell, it squirts out water with vigorous force. ",
+    "image": "1.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "tiny turtle"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "torrent"
+        },
+        {
+            "trait_type": "Type",
+            "value": "water"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "grass"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "blue"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "1.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}

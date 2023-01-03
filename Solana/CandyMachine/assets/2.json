@@ -1,0 +1,33 @@
+{
+    "name": "Bulbasaur",
+    "symbol": "POKEMON",
+    "description": "   There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger. ",
+    "image": "2.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "seed"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "overgrow"
+        },
+        {
+            "trait_type": "Type",
+            "value": "grass"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "ice"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "green"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "2.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}

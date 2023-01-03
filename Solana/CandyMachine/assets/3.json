@@ -1,0 +1,33 @@
+{
+    "name": "Charmander",
+    "symbol": "POKEMON",
+    "description": "    It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail. ",
+    "image": "3.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "lizard"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "blaze"
+        },
+        {
+            "trait_type": "Type",
+            "value": "fire"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "water"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "orange"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "3.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "Pikachu",
+    "symbol": "POKEMON",
+    "description": " Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy",
+    "image": "0.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "mouse"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "static"
+        },
+        {
+            "trait_type": "Type",
+            "value": "electric"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "ground"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "yellow"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "0.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}
