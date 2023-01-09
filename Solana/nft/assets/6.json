@@ -1,0 +1,33 @@
+{
+    "name": "Pidgeot",
+    "symbol": "POKEMON",
+    "description": " This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons. ",
+    "image": "6.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "bird"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "keen eye"
+        },
+        {
+            "trait_type": "Type",
+            "value": "flying"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "electric"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "yellow"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "6.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}

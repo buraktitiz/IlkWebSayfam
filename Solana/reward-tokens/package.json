@@ -11,8 +11,13 @@
     "create-bld-token": "ts-node ./tokens/bld/index.ts"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.15",
+    "@chakra-ui/react": "^2.4.6",
     "@metaplex-foundation/js": "^0.17.12",
     "@metaplex-foundation/mpl-token-metadata": "^2.5.2",
+    "@solana/wallet-adapter-react": "^0.15.28",
+    "@solana/wallet-adapter-react-ui": "^0.9.27",
+    "@solana/wallet-adapter-wallets": "^0.19.10",
     "@solana/web3.js": "^1.73.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",

@@ -1,0 +1,73 @@
+{
+  "program": {
+    "candyMachine": "3SeZJgfHXjhAXFGpxzscBWuGMULNCQ5Y2dD7GQnoToML",
+    "candyMachineCreator": "GqqAhQeWNwwk8SkunYkaHUiVGMpbtcbdCPyYChJt5EKs",
+    "collectionMint": "9cBChqTAy12dQUDeRmpVWRo5DeeXofUsfoCUxhLnVLX5"
+  },
+  "items": {
+    "-1": {
+      "name": "Pokemon",
+      "image_hash": "ef2ad43133e87c9e2005fcc6814a4b1f9b272b6adfa7a651b8ce01e503d281d5",
+      "image_link": "https://arweave.net/qAV81A9ZN2jzoofBzpmxbzeywBRoJRZGbKjq9BZROb4?ext=jpeg",
+      "metadata_hash": "a38ff78a73cd40fcee799c4c197bb20a63638ca677847544bfaaed1e9409e07e",
+      "metadata_link": "https://arweave.net/TUy4vh0YFAX1exAS0CQWKenLQXAqeEIXCixsrRs4AXs",
+      "onChain": true
+    },
+    "0": {
+      "name": "Pikachu",
+      "image_hash": "0e705d0a0e215d14f9b87e4a7b7f660449dfb6d32339aabd04c7a4c09bd1cf8b",
+      "image_link": "https://arweave.net/ePOCX0VpcXityLUfzFjE1EIwVm0z3fzKUOH-6vcg5Lk?ext=jpeg",
+      "metadata_hash": "5dcce7d2d13f40ae7389f424c98dcf85dfe1fa0ecb19feafd6e11ce32341aa11",
+      "metadata_link": "https://arweave.net/QRAys1sm9S-Ma2goI9nsDM8FGjDa4Q9wsSkhrN4YNq4",
+      "onChain": true
+    },
+    "1": {
+      "name": "Squirtle",
+      "image_hash": "c15d833ba1c16bbdd0ca363d34adc04e382e07c371e028e8ab12d6daca29dbcd",
+      "image_link": "https://arweave.net/xuU71Pt0TW19Z6ePxLsElkkV_R2DbL_tSXwblTiIiGE?ext=jpeg",
+      "metadata_hash": "8b4af10138bb6ec6e21e1dd1e349b9f05800b1730358a355fe1b681a874501a6",
+      "metadata_link": "https://arweave.net/57reBVrm_h_-0CfzFmiRLdJJ319xrfjYPDcqu787A8o",
+      "onChain": true
+    },
+    "2": {
+      "name": "Bulbasaur",
+      "image_hash": "84e25304da3d7f590e40c8b667bfdf6d584123dfe78e5735aa6bee71aa1528fc",
+      "image_link": "https://arweave.net/bNxew-PbHwQBMvkTjkh1kcA47GAGu7rPH3-WVf1gn3g?ext=jpeg",
+      "metadata_hash": "be1d7c105c6e47d2739d45d79858123326ca5b4b767c4c5005b9c59184746fb8",
+      "metadata_link": "https://arweave.net/GZE4WWYCtu9gKaojuxPS2nnIRwiEPmbkF1DT-Jr5sYU",
+      "onChain": true
+    },
+    "3": {
+      "name": "Charmander",
+      "image_hash": "ec898f1b783de6ca240aaa72f05f8619e8c124add0370209c3667bf3547b5911",
+      "image_link": "https://arweave.net/0UGAdGVXNMucxTceGDaNRYr7N1iRLo0qni9LQKk5zPQ?ext=jpeg",
+      "metadata_hash": "305dbe42789d101581c788ddb719da10590c7228704fac8f93155db95dda7bfd",
+      "metadata_link": "https://arweave.net/Zmr8mkM1is03b3C88_oXRZuH6SDHjsp4fbBAO3BXHeE",
+      "onChain": true
+    },
+    "4": {
+      "name": "Charizard",
+      "image_hash": "eabfd9c7cff165d89d06341a2e83d5e9710e8520d0d5d31864b7ef8ba606e3c5",
+      "image_link": "https://arweave.net/9RvZ2r1jVt5X92DrmQ5SUjaACmgaKX2woq3T6QOsDRE?ext=jpeg",
+      "metadata_hash": "7ea16958ff1ed972abb41244e068566cc4520f479fefb58272e7ccebdc3568f2",
+      "metadata_link": "https://arweave.net/IiBr7_lFzuboGh9hk91rxGXjPZ9V2qjIPYNi7JzaFo4",
+      "onChain": true
+    },
+    "5": {
+      "name": "Jigglypuff",
+      "image_hash": "8cc3f02af566a912fc2461e3f3ccb3268b5a579bf356a38d1ba2b1826778bc14",
+      "image_link": "https://arweave.net/gHswAk_gXqv8sUq1i0qFESHs4Fe8K987VB8mc36GgzM?ext=jpeg",
+      "metadata_hash": "453354dcad31bbc4dfb8edd4c30be73100b18f6196bab03f09428c4084346bde",
+      "metadata_link": "https://arweave.net/GvVg5C3sj6thp-oJtwa0PMm6PNs8lSEd8HBa_PRnRQ0",
+      "onChain": true
+    },
+    "6": {
+      "name": "Pidgeot",
+      "image_hash": "e1bd92f70a0e42f05c9f3c2c677c4d1907817624e85925b71ce1131c4d0c0ea8",
+      "image_link": "https://arweave.net/TrfapDAF_Nsg7eUD7QjIjOPh9gnTDEVQMDp6HlyjEo4?ext=jpeg",
+      "metadata_hash": "a1a07abb1106deb8d764d0fe197ab9682bb0c44a59d8c6488983d6fe15fc2293",
+      "metadata_link": "https://arweave.net/CFyhUcZRwmeCLO5EUT3weK5IiivUJ3Wc1WH8ieovoCA",
+      "onChain": true
+    }
+  }
+}

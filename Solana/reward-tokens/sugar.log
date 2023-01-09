@@ -1,0 +1,4 @@
+{"v":0,"name":"sugar","msg":"Lend me some sugar, I am your neighbor.","level":30,"hostname":"DESKTOP-E0UECQV","pid":1412,"time":"2023-01-06T12:10:20.2953117Z","target":"sugar","line":117,"file":"src/main.rs"}
+{"v":0,"name":"sugar","msg":"Assets directory is missing or empty.","level":30,"hostname":"DESKTOP-E0UECQV","pid":1412,"time":"2023-01-06T12:10:20.3008722Z","target":"sugar_cli::validate::process","line":33,"file":"src\\validate\\process.rs"}
+name":"sugar","msg":"Assets directory is missing or empty.","level":30,"hostname":"DESKTOP-E0UECQV","pid":20688,"time":"2023-01-06T11:26:18.9234651Z","target":"sugar_cli::validate::process","line":33,"file":"src\\validate\\process.rs"}
+line":53,"file":"src\\setup.rs"}

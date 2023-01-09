@@ -1,0 +1,33 @@
+{
+    "name": "Jigglypuff",
+    "symbol": "POKEMON",
+    "description": " Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep. ",
+    "image": "5.jpeg",
+    "attributes": [{
+            "trait_type": "Category",
+            "value": "balloon"
+        },
+        {
+            "trait_type": "Abilities",
+            "value": "competitive"
+        },
+        {
+            "trait_type": "Type",
+            "value": "fairy"
+        },
+        {
+            "trait_type": "Weaknesses",
+            "value": "poison"
+        },
+        {
+            "trait_type": "Colors",
+            "value": "pink"
+        }
+    ],
+    "properties": {
+        "files": [{
+            "uri": "5.jpeg",
+            "type": "image/jpeg"
+        }]
+    }
+}
