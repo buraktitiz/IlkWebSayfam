@@ -127,12 +127,12 @@ sugar mint
 
 ### 🎉: $\textcolor{gray}{And\ Here\ is\ your\ collection}$
 
-![image]()
+![image](https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Solana/nft/img/pokemon-1.png)
 
 ### :sparkles: $\textcolor{gray}{Open\ your\ wallet\ and\ see\ your\ collection}$
 
  <p align="center">
-    <img src="">
+    <img src="https://github.com/buraktitiz/Patika-FrontEnd/blob/main/Solana/nft/img/pokemon-2.png">
 
 ## $\textcolor{gray}{if\ you\ want\ to\ create\ a\ front-end\ for\ your\ NFT\ collection\ with\  React\ UI\ template,\ visit\ my\ repo}$
 
