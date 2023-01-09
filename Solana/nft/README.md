@@ -42,34 +42,34 @@ Before we can get into this, we'll need to install:
 
 ```json
 {
-    "name": "Squirtle",
+    "name": "Pikachu",
     "symbol": "POKEMON",
-    "description": "  When it retracts its long neck into its shell, it squirts out water with vigorous force. ",
-    "image": "1.jpeg",
+    "description": " Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy",
+    "image": "0.jpeg",
     "attributes": [{
             "trait_type": "Category",
-            "value": "tiny turtle"
+            "value": "mouse"
         },
         {
             "trait_type": "Abilities",
-            "value": "torrent"
+            "value": "static"
         },
         {
             "trait_type": "Type",
-            "value": "water"
+            "value": "electric"
         },
         {
             "trait_type": "Weaknesses",
-            "value": "grass"
+            "value": "ground"
         },
         {
             "trait_type": "Colors",
-            "value": "blue"
+            "value": "yellow"
         }
     ],
     "properties": {
         "files": [{
-            "uri": "1.jpeg",
+            "uri": "0.jpeg",
             "type": "image/jpeg"
         }]
     }
