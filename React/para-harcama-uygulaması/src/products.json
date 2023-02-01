@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "title": "Sakız",
+        "price": 0.5,
+        "image": "https://www.selimcerezevi.com/UserFiles/Fotograflar/org/269-8690524055130-jpg-8690524055130.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Kola",
+        "price": 6,
+        "image": "https://www.incillikebap.com.tr/i/l/000/0000051_25-lt-kola.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Ayakkabı",
+        "price": 400,
+        "image": "https://cdn.sorsware.com/oxxo/ContentImages/Product/22k/22KOX-ZINSNEAK/zincir-detayli-spor-ayakkabi_creme-brulee-bej_1_detay.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Araba",
+        "price": 40000,
+        "image": "https://jamara-shop.com/media/image/product/2652/lg/405142_pagani-zonda-r-1-24-schwarz-24ghz~5.jpg"
+    }
+]
